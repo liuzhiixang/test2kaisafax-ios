@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="KSServerStatusView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="452"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEp-U2-mBa" userLabel="Container">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="server_status_title_img" translatesAutoresizingMaskIntoConstraints="NO" id="JPf-dU-E2w" userLabel="rocketImg">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="JPf-dU-E2w" secondAttribute="height" multiplier="20:11" id="K04-4b-dbF"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAt-6k-FhY" userLabel="Bottom Container">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJR-Gh-qSv" userLabel="timeLabel">
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.93333333330000001" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxM-sL-06C" customClass="YYLabel">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOh-EG-SyU">
+                            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="5zR-Af-MRR"/>
+                                <constraint firstAttribute="height" constant="45" id="UFg-2n-RaM"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppOrangeButton"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="JPf-dU-E2w" firstAttribute="top" secondItem="fEp-U2-mBa" secondAttribute="top" id="5Ih-G9-4cY"/>
+                        <constraint firstItem="zJR-Gh-qSv" firstAttribute="leading" secondItem="fEp-U2-mBa" secondAttribute="leading" id="7hg-gq-0bH"/>
+                        <constraint firstItem="jxM-sL-06C" firstAttribute="leading" secondItem="fEp-U2-mBa" secondAttribute="leading" id="9kM-9k-ucG"/>
+                        <constraint firstItem="GOh-EG-SyU" firstAttribute="centerX" secondItem="fEp-U2-mBa" secondAttribute="centerX" id="Beh-z3-FhV"/>
+                        <constraint firstAttribute="trailing" secondItem="jxM-sL-06C" secondAttribute="trailing" id="FQf-dX-ofy"/>
+                        <constraint firstItem="JPf-dU-E2w" firstAttribute="leading" secondItem="fEp-U2-mBa" secondAttribute="leading" id="G2a-TF-I6p"/>
+                        <constraint firstItem="zJR-Gh-qSv" firstAttribute="top" secondItem="JPf-dU-E2w" secondAttribute="bottom" constant="10" id="MKV-CO-CG4"/>
+                        <constraint firstAttribute="bottom" secondItem="GOh-EG-SyU" secondAttribute="bottom" constant="30" id="QIW-Ag-7rm"/>
+                        <constraint firstAttribute="trailing" secondItem="JPf-dU-E2w" secondAttribute="trailing" id="RAa-SX-WCf"/>
+                        <constraint firstItem="hAt-6k-FhY" firstAttribute="leading" secondItem="fEp-U2-mBa" secondAttribute="leading" id="bVf-qS-EHh"/>
+                        <constraint firstAttribute="trailing" secondItem="zJR-Gh-qSv" secondAttribute="trailing" id="fUa-CC-dWn"/>
+                        <constraint firstItem="hAt-6k-FhY" firstAttribute="top" secondItem="JPf-dU-E2w" secondAttribute="bottom" id="gpR-M0-KbQ"/>
+                        <constraint firstAttribute="trailing" secondItem="hAt-6k-FhY" secondAttribute="trailing" id="oHD-Ti-8tM"/>
+                        <constraint firstAttribute="bottom" secondItem="hAt-6k-FhY" secondAttribute="bottom" id="xH6-je-bdT"/>
+                        <constraint firstItem="jxM-sL-06C" firstAttribute="top" secondItem="zJR-Gh-qSv" secondAttribute="bottom" constant="14" id="ynA-Di-h99"/>
+                        <constraint firstItem="GOh-EG-SyU" firstAttribute="top" secondItem="jxM-sL-06C" secondAttribute="bottom" constant="30" id="z2I-t0-OqU"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fEp-U2-mBa" secondAttribute="trailing" id="MDJ-ce-DyK"/>
+                <constraint firstItem="fEp-U2-mBa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WQo-R8-kJR"/>
+                <constraint firstItem="fEp-U2-mBa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XO1-Oj-IL5"/>
+                <constraint firstAttribute="bottom" secondItem="fEp-U2-mBa" secondAttribute="bottom" id="xVu-Sl-gos"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="actionBtn" destination="GOh-EG-SyU" id="PM0-z8-sIQ"/>
+                <outlet property="commentLabel2" destination="zJR-Gh-qSv" id="Jgh-pc-I10"/>
+                <outlet property="commentLabel3" destination="jxM-sL-06C" id="Ve1-6w-453"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="server_status_title_img" width="295" height="162"/>
+    </resources>
+</document>

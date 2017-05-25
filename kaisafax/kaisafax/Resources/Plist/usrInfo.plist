@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>iconName</key>
+		<string>account_my_redrepper</string>
+		<key>titleName</key>
+		<string>我的红包</string>
+	</dict>
+	<dict>
+		<key>iconName</key>
+		<string>account_jdcards</string>
+		<key>titleName</key>
+		<string>我的京东卡</string>
+	</dict>
+	<dict>
+		<key>iconName</key>
+		<string>account_my_extend</string>
+		<key>titleName</key>
+		<string>我的推广</string>
+	</dict>
+	<dict>
+		<key>iconName</key>
+		<string>account_my_reward</string>
+		<key>titleName</key>
+		<string>可提奖励</string>
+	</dict>
+	<dict>
+		<key>iconName</key>
+		<string>account_my_invest</string>
+		<key>titleName</key>
+		<string>我的投资</string>
+	</dict>
+	<dict>
+		<key>iconName</key>
+		<string>account_repay_calendar</string>
+		<key>titleName</key>
+		<string>回款日历</string>
+	</dict>
+	<dict>
+		<key>iconName</key>
+		<string>account_auto_loan</string>
+		<key>titleName</key>
+		<string>自动投标</string>
+	</dict>
+	<dict>
+		<key>iconName</key>
+		<string>account_fund_record</string>
+		<key>titleName</key>
+		<string>资金记录</string>
+	</dict>
+	<dict>
+		<key>iconName</key>
+		<string>account_bank_cards</string>
+		<key>titleName</key>
+		<string>我的银行卡</string>
+	</dict>
+	<dict>
+		<key>iconName</key>
+		<string>account_customer_seervice</string>
+		<key>titleName</key>
+		<string>客服中心</string>
+	</dict>
+</array>
+</plist>

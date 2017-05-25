@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSLoginVC">
+            <connections>
+                <outlet property="contentScroll" destination="syy-7Z-Qcr" id="BxN-8C-n6G"/>
+                <outlet property="contentView" destination="hp4-Mq-RdQ" id="AAU-UN-tNp"/>
+                <outlet property="forgetBtn" destination="iUU-mU-dTD" id="YgE-xc-94I"/>
+                <outlet property="loginBtn" destination="bFD-dm-AWF" id="JIS-BA-n8a"/>
+                <outlet property="passwordTF" destination="RsL-H3-L0G" id="W5L-p6-rHQ"/>
+                <outlet property="topImageView" destination="FOm-1W-49k" id="I3b-Ng-LTG"/>
+                <outlet property="turn2RegisterLabel" destination="Y6r-eO-xbD" id="wZg-OI-Qw8"/>
+                <outlet property="userNameTF" destination="zuD-lm-zD3" id="Ht0-Gu-aQW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="Gm4-Z4-4p0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="syy-7Z-Qcr">
+                    <frame key="frameInset" minY="-64" width="600" height="664"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hp4-Mq-RdQ">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="664"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="FOm-1W-49k">
+                                    <frame key="frameInset" width="600" height="400"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="FOm-1W-49k" secondAttribute="height" multiplier="3:2" id="fTy-1b-5Kp"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zuD-lm-zD3" customClass="KSLRTextField">
+                                    <frame key="frameInset" minX="20" minY="420" width="560" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="FBt-2g-e00"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppTextField"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RsL-H3-L0G" customClass="KSLRTextField">
+                                    <frame key="frameInset" minX="20" minY="480" width="560" height="40"/>
+                                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="V8J-yM-pTE"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppTextField"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFD-dm-AWF">
+                                    <frame key="frameInset" minX="20" minY="540" width="560" height="45"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="kBW-R4-nzc"/>
+                                    </constraints>
+                                    <state key="normal" title="login"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppOrangeButton"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6r-eO-xbD" customClass="YYLabel">
+                                    <frame key="frameInset" minX="20" minY="595" width="120" height="25"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="aSP-Dw-Fl3"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUU-mU-dTD">
+                                    <frame key="frameInset" minX="460" minY="595" width="120" height="25"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="dm3-bh-zem"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="Button"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppNormalLightGrayTextButton"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="RsL-H3-L0G" secondAttribute="trailing" constant="20" id="08O-uq-dbu"/>
+                                <constraint firstItem="bFD-dm-AWF" firstAttribute="top" secondItem="RsL-H3-L0G" secondAttribute="bottom" constant="20" id="0TI-ko-wjW"/>
+                                <constraint firstItem="RsL-H3-L0G" firstAttribute="top" secondItem="zuD-lm-zD3" secondAttribute="bottom" constant="20" id="1EN-nR-O4u"/>
+                                <constraint firstAttribute="trailing" secondItem="iUU-mU-dTD" secondAttribute="trailing" constant="20" id="2eO-jd-iYQ"/>
+                                <constraint firstItem="RsL-H3-L0G" firstAttribute="leading" secondItem="hp4-Mq-RdQ" secondAttribute="leading" constant="20" id="C53-Lj-8o6"/>
+                                <constraint firstItem="FOm-1W-49k" firstAttribute="leading" secondItem="hp4-Mq-RdQ" secondAttribute="leading" id="Glu-Zq-jcd"/>
+                                <constraint firstAttribute="trailing" secondItem="FOm-1W-49k" secondAttribute="trailing" id="MYb-hA-R59"/>
+                                <constraint firstItem="zuD-lm-zD3" firstAttribute="top" secondItem="FOm-1W-49k" secondAttribute="bottom" constant="20" id="OmM-VQ-vZA"/>
+                                <constraint firstItem="zuD-lm-zD3" firstAttribute="leading" secondItem="hp4-Mq-RdQ" secondAttribute="leading" constant="20" id="PUl-gp-UgQ"/>
+                                <constraint firstItem="Y6r-eO-xbD" firstAttribute="top" secondItem="bFD-dm-AWF" secondAttribute="bottom" constant="10" id="Sgg-mv-waa"/>
+                                <constraint firstAttribute="trailing" secondItem="zuD-lm-zD3" secondAttribute="trailing" constant="20" id="fr2-fV-3YH"/>
+                                <constraint firstItem="FOm-1W-49k" firstAttribute="top" secondItem="hp4-Mq-RdQ" secondAttribute="top" id="lAa-hn-R9U"/>
+                                <constraint firstItem="iUU-mU-dTD" firstAttribute="top" secondItem="bFD-dm-AWF" secondAttribute="bottom" constant="10" id="mQ4-m2-BQi"/>
+                                <constraint firstAttribute="trailing" secondItem="bFD-dm-AWF" secondAttribute="trailing" constant="20" id="nY0-gP-SV0"/>
+                                <constraint firstItem="bFD-dm-AWF" firstAttribute="leading" secondItem="hp4-Mq-RdQ" secondAttribute="leading" constant="20" id="xOm-ex-UVw"/>
+                                <constraint firstItem="Y6r-eO-xbD" firstAttribute="leading" secondItem="hp4-Mq-RdQ" secondAttribute="leading" constant="20" id="zH6-Xx-CGa"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hp4-Mq-RdQ" firstAttribute="leading" secondItem="syy-7Z-Qcr" secondAttribute="leading" id="aAv-V1-i1c"/>
+                        <constraint firstItem="hp4-Mq-RdQ" firstAttribute="width" secondItem="syy-7Z-Qcr" secondAttribute="width" id="bZZ-dI-tyT"/>
+                        <constraint firstItem="hp4-Mq-RdQ" firstAttribute="top" secondItem="syy-7Z-Qcr" secondAttribute="top" id="lLB-1s-gfy"/>
+                        <constraint firstAttribute="bottom" secondItem="hp4-Mq-RdQ" secondAttribute="bottom" id="tl4-am-kQ6"/>
+                        <constraint firstAttribute="trailing" secondItem="hp4-Mq-RdQ" secondAttribute="trailing" id="zqb-MY-ttf"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hp4-Mq-RdQ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" constant="64" id="4XH-ZD-AwY"/>
+                <constraint firstItem="syy-7Z-Qcr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-64" id="Hu0-z1-9Ie"/>
+                <constraint firstAttribute="bottom" secondItem="syy-7Z-Qcr" secondAttribute="bottom" id="LeT-Fa-4Er"/>
+                <constraint firstAttribute="trailing" secondItem="syy-7Z-Qcr" secondAttribute="trailing" id="T1L-zY-Z8X"/>
+                <constraint firstItem="syy-7Z-Qcr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yRh-B7-rlu"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_bg" width="375" height="253"/>
+    </resources>
+</document>

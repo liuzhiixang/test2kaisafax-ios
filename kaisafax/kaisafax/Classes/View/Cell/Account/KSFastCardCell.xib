@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="KSFastCardCell" rowHeight="252" id="KGk-i7-Jjw" customClass="KSFastCardCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="252"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="251"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJS-QC-C5e">
+                        <rect key="frame" x="8" y="2" width="304" height="124"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fab-Fz-2Kl">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="单笔限额5W, 单日限额5W" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehn-18-nn7" customClass="KSLabel">
+                                        <rect key="frame" x="64" y="33" width="224" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallLightGrayLabel"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_notice" translatesAutoresizingMaskIntoConstraints="NO" id="Irn-s4-x4a">
+                                        <rect key="frame" x="16" y="13" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Klw-rm-VzF"/>
+                                            <constraint firstAttribute="width" constant="32" id="rOB-o6-8vf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="招商银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vj2-KR-yeP" customClass="KSLabel">
+                                        <rect key="frame" x="64" y="10" width="68" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppLargeDarkGrayLabel"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_bank_type_express" translatesAutoresizingMaskIntoConstraints="NO" id="i0K-B7-lQB">
+                                        <rect key="frame" x="245" y="8" width="51" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="7J1-ps-fhx"/>
+                                            <constraint firstAttribute="width" constant="51" id="PRa-v8-mDH"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="i0K-B7-lQB" firstAttribute="centerY" secondItem="vj2-KR-yeP" secondAttribute="centerY" id="G51-QW-6qP"/>
+                                    <constraint firstAttribute="bottom" secondItem="ehn-18-nn7" secondAttribute="bottom" constant="4" id="Jxk-gt-VdK"/>
+                                    <constraint firstItem="vj2-KR-yeP" firstAttribute="leading" secondItem="Irn-s4-x4a" secondAttribute="trailing" constant="16" id="KNg-aF-Pck"/>
+                                    <constraint firstItem="ehn-18-nn7" firstAttribute="leading" secondItem="vj2-KR-yeP" secondAttribute="leading" id="Kqa-I0-9cb"/>
+                                    <constraint firstAttribute="trailing" secondItem="ehn-18-nn7" secondAttribute="trailing" constant="16" id="Kvb-A7-LGO"/>
+                                    <constraint firstItem="Irn-s4-x4a" firstAttribute="leading" secondItem="Fab-Fz-2Kl" secondAttribute="leading" constant="16" id="TrN-kz-W3M"/>
+                                    <constraint firstAttribute="trailing" secondItem="i0K-B7-lQB" secondAttribute="trailing" constant="12" id="YZp-Dw-lxR"/>
+                                    <constraint firstItem="Irn-s4-x4a" firstAttribute="centerY" secondItem="Fab-Fz-2Kl" secondAttribute="centerY" id="igQ-Fy-QIw"/>
+                                    <constraint firstItem="ehn-18-nn7" firstAttribute="top" secondItem="vj2-KR-yeP" secondAttribute="bottom" constant="2" id="lsV-0f-rxT"/>
+                                    <constraint firstItem="vj2-KR-yeP" firstAttribute="top" secondItem="Fab-Fz-2Kl" secondAttribute="top" constant="10" id="oV0-PR-PMd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4VL-YN-bJl">
+                                <rect key="frame" x="0.0" y="58" width="304" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王*玛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9U-bv-s4B" customClass="KSLabel">
+                                        <rect key="frame" x="64" y="33" width="43" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallLightGrayLabel"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="6222 **** **** 8888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxq-r2-CCc" customClass="KSLabel">
+                                        <rect key="frame" x="64" y="8" width="163" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppXLargerDarkGrayLabel"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="储蓄卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nf4-c2-r7o" customClass="KSLabel">
+                                        <rect key="frame" x="131" y="36" width="36" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallLightGrayLabel"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Fxq-r2-CCc" firstAttribute="top" secondItem="4VL-YN-bJl" secondAttribute="top" constant="8" id="0ue-CZ-aB9"/>
+                                    <constraint firstItem="H9U-bv-s4B" firstAttribute="top" secondItem="Fxq-r2-CCc" secondAttribute="bottom" constant="4" id="Ex3-ie-kc7"/>
+                                    <constraint firstItem="Nf4-c2-r7o" firstAttribute="leading" secondItem="H9U-bv-s4B" secondAttribute="trailing" constant="24" id="M0m-oI-eis"/>
+                                    <constraint firstItem="H9U-bv-s4B" firstAttribute="leading" secondItem="Fxq-r2-CCc" secondAttribute="leading" id="XVK-3x-bkl"/>
+                                    <constraint firstItem="Nf4-c2-r7o" firstAttribute="centerY" secondItem="H9U-bv-s4B" secondAttribute="centerY" id="bgP-8y-YJv"/>
+                                    <constraint firstItem="Fxq-r2-CCc" firstAttribute="leading" secondItem="4VL-YN-bJl" secondAttribute="leading" constant="64" id="mqk-aE-NTh"/>
+                                    <constraint firstAttribute="bottom" secondItem="H9U-bv-s4B" secondAttribute="bottom" constant="12" id="zJs-yi-v2F"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oAq-Zu-FV4" userLabel="Stop View">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="125"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_card_stop" translatesAutoresizingMaskIntoConstraints="NO" id="QTa-F5-xCm">
+                                        <rect key="frame" x="120" y="38" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="ViV-tC-VPn"/>
+                                            <constraint firstAttribute="height" constant="64" id="l17-hS-TwW"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="QTa-F5-xCm" firstAttribute="centerX" secondItem="oAq-Zu-FV4" secondAttribute="centerX" id="ALY-Iu-ERe"/>
+                                    <constraint firstItem="QTa-F5-xCm" firstAttribute="centerY" secondItem="oAq-Zu-FV4" secondAttribute="centerY" id="EYo-8T-5S9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4VL-YN-bJl" firstAttribute="top" secondItem="Fab-Fz-2Kl" secondAttribute="bottom" id="EW4-w1-Jsb"/>
+                            <constraint firstItem="4VL-YN-bJl" firstAttribute="leading" secondItem="CJS-QC-C5e" secondAttribute="leading" id="JnS-Pd-jK6"/>
+                            <constraint firstAttribute="trailing" secondItem="4VL-YN-bJl" secondAttribute="trailing" id="LyU-F5-HnZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Fab-Fz-2Kl" secondAttribute="trailing" id="U7m-O2-MXd"/>
+                            <constraint firstAttribute="bottom" secondItem="4VL-YN-bJl" secondAttribute="bottom" id="V7M-Wd-6Rz"/>
+                            <constraint firstItem="Fab-Fz-2Kl" firstAttribute="top" secondItem="CJS-QC-C5e" secondAttribute="top" id="bX5-Rd-e8j"/>
+                            <constraint firstAttribute="bottom" secondItem="oAq-Zu-FV4" secondAttribute="bottom" id="clU-7W-dkh"/>
+                            <constraint firstAttribute="trailing" secondItem="oAq-Zu-FV4" secondAttribute="trailing" id="cr4-wp-iMO"/>
+                            <constraint firstItem="oAq-Zu-FV4" firstAttribute="leading" secondItem="CJS-QC-C5e" secondAttribute="leading" id="fka-aE-OSZ"/>
+                            <constraint firstItem="oAq-Zu-FV4" firstAttribute="top" secondItem="CJS-QC-C5e" secondAttribute="top" id="hba-qZ-VDf"/>
+                            <constraint firstItem="Fab-Fz-2Kl" firstAttribute="leading" secondItem="CJS-QC-C5e" secondAttribute="leading" id="kSj-GF-4Yi"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppRoundView"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2U-OA-PBn" customClass="KSButton">
+                        <rect key="frame" x="8" y="188" width="304" height="30"/>
+                        <color key="backgroundColor" red="0.5296475887298584" green="0.52963173389434814" blue="0.52964073419570923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="确认充值"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppOrangeButton"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="充值手续费由佳兆业金服全额垫付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfi-9e-zq3" customClass="KSLabel">
+                        <rect key="frame" x="70" y="226" width="180" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallLightGrayLabel"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="一个用户只能绑定一个快捷卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1N-SN-ZPb" customClass="KSLabel">
+                        <rect key="frame" x="67" y="149" width="169" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallLightGrayLabel"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceh-Jm-c2I">
+                        <rect key="frame" x="244" y="141" width="60" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="我要解绑"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="RechargeUnbindButton"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ceh-Jm-c2I" firstAttribute="centerY" secondItem="v1N-SN-ZPb" secondAttribute="centerY" id="6D1-aW-aYE"/>
+                    <constraint firstAttribute="trailing" secondItem="CJS-QC-C5e" secondAttribute="trailing" constant="8" id="7Vk-HW-Xlp"/>
+                    <constraint firstAttribute="trailing" secondItem="H2U-OA-PBn" secondAttribute="trailing" constant="8" id="9xS-Bg-zrU"/>
+                    <constraint firstItem="H2U-OA-PBn" firstAttribute="top" secondItem="v1N-SN-ZPb" secondAttribute="bottom" constant="23" id="GNc-0J-zHL"/>
+                    <constraint firstItem="vfi-9e-zq3" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="JFt-9j-BBh"/>
+                    <constraint firstAttribute="trailing" secondItem="Ceh-Jm-c2I" secondAttribute="trailing" constant="16" id="LrM-Es-HE4"/>
+                    <constraint firstItem="v1N-SN-ZPb" firstAttribute="top" secondItem="CJS-QC-C5e" secondAttribute="bottom" constant="23" id="NAc-k2-Vsn"/>
+                    <constraint firstAttribute="bottom" secondItem="vfi-9e-zq3" secondAttribute="bottom" constant="10.5" id="PRa-Aa-W1b"/>
+                    <constraint firstItem="H2U-OA-PBn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="XqL-cX-9d0"/>
+                    <constraint firstItem="Ceh-Jm-c2I" firstAttribute="leading" secondItem="v1N-SN-ZPb" secondAttribute="trailing" constant="8" id="blk-Tt-7SM"/>
+                    <constraint firstItem="CJS-QC-C5e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="ihr-1y-U1l"/>
+                    <constraint firstItem="vfi-9e-zq3" firstAttribute="top" secondItem="H2U-OA-PBn" secondAttribute="bottom" constant="8" id="vaR-8Z-3kQ"/>
+                    <constraint firstItem="CJS-QC-C5e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="yRc-wn-MUW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="bankLabel" destination="Fxq-r2-CCc" id="VT4-Z1-956"/>
+                <outlet property="cardDetailLabel" destination="ehn-18-nn7" id="ptG-Y5-B7d"/>
+                <outlet property="cardIconImageView" destination="Irn-s4-x4a" id="BI7-Pv-zwv"/>
+                <outlet property="cardNameLabel" destination="vj2-KR-yeP" id="4hc-jX-hTF"/>
+                <outlet property="cardStopView" destination="oAq-Zu-FV4" id="zze-MM-ABU"/>
+                <outlet property="cardView" destination="Fab-Fz-2Kl" id="ywn-68-9GI"/>
+                <outlet property="nameLabel" destination="H9U-bv-s4B" id="cda-CY-hIk"/>
+                <outlet property="rechargeButton" destination="H2U-OA-PBn" id="cnz-W1-Uz8"/>
+                <outlet property="unbindButton" destination="Ceh-Jm-c2I" id="afl-Jf-zpm"/>
+                <outlet property="userView" destination="4VL-YN-bJl" id="HwU-N0-QCV"/>
+            </connections>
+            <point key="canvasLocation" x="244" y="284"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_bank_type_express" width="50" height="14"/>
+        <image name="ic_card_stop" width="67" height="66"/>
+        <image name="ic_notice" width="18" height="18"/>
+    </resources>
+</document>

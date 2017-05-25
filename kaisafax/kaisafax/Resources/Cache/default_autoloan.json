@@ -1,0 +1,22 @@
+{
+    "autoInvest": {
+        "maxRate": 2400,
+        "minAmount": 100,
+        "minRate": 500,
+        "durType": 1,
+        "maxDays": 360,
+        "userId": "1492957439896887488",
+        "minDays": 1,
+        "maxAmount": 1000000,
+        "range": 15,
+        "reservedAmount": "0",
+        "status": 1,
+        "repayMethodIndex":15
+    },
+    "repayMethod": {
+        "BULLET_REPAYMENT": "1",
+        "EQUAL_INSTALLMENT": "1",
+        "EQUAL_PRINCIPAL": "1",
+        "INTEREST": "1"
+    }
+}

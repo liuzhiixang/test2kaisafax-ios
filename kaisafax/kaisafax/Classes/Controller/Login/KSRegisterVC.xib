@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSRegisterVC">
+            <connections>
+                <outlet property="agreeCheckBox" destination="b1m-mH-77J" id="xUD-xm-dHc"/>
+                <outlet property="agreeProtocolLabel" destination="sUQ-EI-7xg" id="yud-B5-Vy4"/>
+                <outlet property="contentScroll" destination="LgZ-4Y-6S9" id="QZW-dR-lF5"/>
+                <outlet property="contentView" destination="EFS-Xf-MAI" id="l0A-En-PRy"/>
+                <outlet property="morTF" destination="BCz-HO-g9z" id="O16-tq-g6k"/>
+                <outlet property="passwordTF1" destination="bff-wJ-KfT" id="UaE-ac-Fqm"/>
+                <outlet property="passwordTF2" destination="icb-8H-0xm" id="3zL-zO-GmI"/>
+                <outlet property="registerBtn" destination="lTs-gK-VWZ" id="XcX-ig-o1x"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LgZ-4Y-6S9">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFS-Xf-MAI">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bff-wJ-KfT" customClass="KSLRTextField">
+                                    <rect key="frame" x="20" y="30" width="560" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="QLK-k8-SRv"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppTextField"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="icb-8H-0xm" customClass="KSLRTextField">
+                                    <rect key="frame" x="20" y="90" width="560" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="jaR-A4-juB"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppTextField"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BCz-HO-g9z" customClass="KSLRTextField">
+                                    <rect key="frame" x="20" y="150" width="560" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="k3G-bm-tdN"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppTextField"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTs-gK-VWZ">
+                                    <rect key="frame" x="20" y="210" width="560" height="45"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="9c1-wu-YNs"/>
+                                    </constraints>
+                                    <state key="normal" title="register"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppOrangeButton"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1m-mH-77J" customClass="BEMCheckBox">
+                                    <rect key="frame" x="20" y="270" width="20" height="20"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="GfZ-zU-JE7"/>
+                                        <constraint firstAttribute="width" constant="20" id="cx9-hu-68c"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                            <color key="value" red="0.93333333330000001" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                            <color key="value" red="0.93333333330000001" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                            <color key="value" red="0.93333333330000001" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sUQ-EI-7xg" customClass="YYLabel">
+                                    <rect key="frame" x="45" y="270" width="200" height="20"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="wcu-fH-r8E"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="bff-wJ-KfT" firstAttribute="leading" secondItem="EFS-Xf-MAI" secondAttribute="leading" constant="20" id="6jl-IF-Sa4"/>
+                                <constraint firstItem="BCz-HO-g9z" firstAttribute="top" secondItem="icb-8H-0xm" secondAttribute="bottom" constant="20" id="8pE-mT-Rs7"/>
+                                <constraint firstItem="icb-8H-0xm" firstAttribute="top" secondItem="bff-wJ-KfT" secondAttribute="bottom" constant="20" id="9u8-5n-Jyv"/>
+                                <constraint firstItem="sUQ-EI-7xg" firstAttribute="centerY" secondItem="b1m-mH-77J" secondAttribute="centerY" id="FYx-zM-Ens"/>
+                                <constraint firstItem="sUQ-EI-7xg" firstAttribute="leading" secondItem="b1m-mH-77J" secondAttribute="trailing" constant="5" id="GGy-pW-jiD"/>
+                                <constraint firstItem="b1m-mH-77J" firstAttribute="leading" secondItem="EFS-Xf-MAI" secondAttribute="leading" constant="20" id="GJJ-Uq-Ym7"/>
+                                <constraint firstItem="lTs-gK-VWZ" firstAttribute="leading" secondItem="EFS-Xf-MAI" secondAttribute="leading" constant="20" id="KQb-VX-OgB"/>
+                                <constraint firstAttribute="trailing" secondItem="lTs-gK-VWZ" secondAttribute="trailing" constant="20" id="M7q-xm-MDj"/>
+                                <constraint firstItem="bff-wJ-KfT" firstAttribute="top" secondItem="EFS-Xf-MAI" secondAttribute="top" constant="30" id="Whc-VT-7ip"/>
+                                <constraint firstItem="lTs-gK-VWZ" firstAttribute="top" secondItem="BCz-HO-g9z" secondAttribute="bottom" constant="20" id="ZSN-RV-OsN"/>
+                                <constraint firstItem="icb-8H-0xm" firstAttribute="leading" secondItem="EFS-Xf-MAI" secondAttribute="leading" constant="20" id="ehU-B3-ExC"/>
+                                <constraint firstAttribute="trailing" secondItem="BCz-HO-g9z" secondAttribute="trailing" constant="20" id="evs-u1-Rd8"/>
+                                <constraint firstItem="BCz-HO-g9z" firstAttribute="leading" secondItem="EFS-Xf-MAI" secondAttribute="leading" constant="20" id="g0H-Qo-O5E"/>
+                                <constraint firstItem="b1m-mH-77J" firstAttribute="top" secondItem="lTs-gK-VWZ" secondAttribute="bottom" constant="15" id="iQA-Qm-sjt"/>
+                                <constraint firstAttribute="trailing" secondItem="icb-8H-0xm" secondAttribute="trailing" constant="20" id="v2n-H2-LjX"/>
+                                <constraint firstAttribute="trailing" secondItem="bff-wJ-KfT" secondAttribute="trailing" constant="20" id="wgF-Za-PSI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="EFS-Xf-MAI" firstAttribute="top" secondItem="LgZ-4Y-6S9" secondAttribute="top" id="0aa-Dc-f2Y"/>
+                        <constraint firstAttribute="trailing" secondItem="EFS-Xf-MAI" secondAttribute="trailing" id="Azf-nD-drf"/>
+                        <constraint firstAttribute="bottom" secondItem="EFS-Xf-MAI" secondAttribute="bottom" id="nu1-IB-LdL"/>
+                        <constraint firstItem="EFS-Xf-MAI" firstAttribute="leading" secondItem="LgZ-4Y-6S9" secondAttribute="leading" id="vjg-4d-Ba5"/>
+                        <constraint firstItem="EFS-Xf-MAI" firstAttribute="width" secondItem="LgZ-4Y-6S9" secondAttribute="width" id="wFD-wl-iMO"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LgZ-4Y-6S9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7q7-7X-6ku"/>
+                <constraint firstItem="EFS-Xf-MAI" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="Uon-Ho-dMN"/>
+                <constraint firstAttribute="bottom" secondItem="LgZ-4Y-6S9" secondAttribute="bottom" id="jtW-pN-ZgN"/>
+                <constraint firstItem="LgZ-4Y-6S9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lfw-Mz-173"/>
+                <constraint firstAttribute="trailing" secondItem="LgZ-4Y-6S9" secondAttribute="trailing" id="zPq-Xh-gIy"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

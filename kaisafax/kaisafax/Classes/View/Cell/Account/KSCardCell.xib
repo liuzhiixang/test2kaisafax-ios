@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="KSCardCell" rowHeight="71" id="KGk-i7-Jjw" customClass="KSCardCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Bh-Cn-xy6">
+                        <rect key="frame" x="8" y="0.0" width="304" height="70.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="单笔限额5W, 单日限额5W" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYw-Aj-Dzk" customClass="KSLabel">
+                                <rect key="frame" x="56" y="37" width="232" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallLightGrayLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="招商银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktL-32-doO" customClass="KSLabel">
+                                <rect key="frame" x="56" y="12" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppNormalDarkGrayLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dad-aq-fca" customClass="BEMCheckBox">
+                                <rect key="frame" x="280" y="27.5" width="16" height="16"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="AB9-8m-Qf2"/>
+                                    <constraint firstAttribute="width" constant="16" id="KWM-Km-GrL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" red="0.96470588239999999" green="0.4362333525" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" red="0.96470588239999999" green="0.4362333525" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onFillColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" red="0.96470588239999999" green="0.4362333525" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="minimumTouchSize">
+                                        <size key="value" width="30" height="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_notice" translatesAutoresizingMaskIntoConstraints="NO" id="j2N-wE-Fdw">
+                                <rect key="frame" x="16" y="19.5" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="aG2-fu-s2f"/>
+                                    <constraint firstAttribute="width" constant="32" id="bnz-Gs-ik1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="DYw-Aj-Dzk" firstAttribute="leading" secondItem="ktL-32-doO" secondAttribute="leading" id="8Qt-he-VrV"/>
+                            <constraint firstAttribute="bottom" secondItem="DYw-Aj-Dzk" secondAttribute="bottom" constant="12" id="8Xd-hx-boi"/>
+                            <constraint firstItem="ktL-32-doO" firstAttribute="top" secondItem="3Bh-Cn-xy6" secondAttribute="top" constant="12" id="EEF-4S-eF3"/>
+                            <constraint firstItem="ktL-32-doO" firstAttribute="leading" secondItem="j2N-wE-Fdw" secondAttribute="trailing" constant="8" id="gCv-Qg-KIW"/>
+                            <constraint firstAttribute="trailing" secondItem="DYw-Aj-Dzk" secondAttribute="trailing" constant="16" id="kho-E3-y2V"/>
+                            <constraint firstItem="Dad-aq-fca" firstAttribute="centerY" secondItem="3Bh-Cn-xy6" secondAttribute="centerY" id="lTp-aX-vMa"/>
+                            <constraint firstItem="DYw-Aj-Dzk" firstAttribute="top" secondItem="ktL-32-doO" secondAttribute="bottom" constant="4" id="oL9-Fd-95g"/>
+                            <constraint firstAttribute="trailing" secondItem="Dad-aq-fca" secondAttribute="trailing" constant="8" id="uxy-0W-EFm"/>
+                            <constraint firstItem="j2N-wE-Fdw" firstAttribute="centerY" secondItem="3Bh-Cn-xy6" secondAttribute="centerY" id="xuo-qb-w1Z"/>
+                            <constraint firstItem="j2N-wE-Fdw" firstAttribute="leading" secondItem="3Bh-Cn-xy6" secondAttribute="leading" constant="16" id="zaI-V8-sOG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3Bh-Cn-xy6" secondAttribute="bottom" id="j6q-HL-yCl"/>
+                    <constraint firstItem="3Bh-Cn-xy6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jJJ-AY-tPv"/>
+                    <constraint firstItem="3Bh-Cn-xy6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="mnI-69-NuF"/>
+                    <constraint firstAttribute="trailing" secondItem="3Bh-Cn-xy6" secondAttribute="trailing" constant="8" id="xVL-Xm-LZt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="iconImageView" destination="j2N-wE-Fdw" id="crt-8A-zvx"/>
+                <outlet property="payCheckBox" destination="Dad-aq-fca" id="gts-S6-DkY"/>
+                <outlet property="subtitleLabel" destination="DYw-Aj-Dzk" id="6wW-g7-mcr"/>
+                <outlet property="titleLabel" destination="ktL-32-doO" id="3Ju-TU-3ce"/>
+            </connections>
+            <point key="canvasLocation" x="304" y="272.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_notice" width="18" height="18"/>
+    </resources>
+</document>

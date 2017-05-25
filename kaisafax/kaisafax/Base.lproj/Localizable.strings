@@ -1,0 +1,345 @@
+/*
+ Localizable.strings
+ kaisafax
+ 
+ Created by semny on 16/7/6.
+ Copyright © 2016年 kaisafax. All rights reserved.
+ */
+
+//common
+"TryRefresh" = "点击刷新试试";
+"SettingSuccessfull" = "设置成功";
+"Unit" = "元";
+"TTUnit" = "万";
+
+//tabbar的item标题
+"TabbarHomeTitle" = "首页";            //"主页面"
+"TabbarInvestTitle" = "投资理财";            //"理财"
+"TabbarAccountTitle" = "我的账户";            //"账户，个人中心"
+"TabbarMoreTitle" = "更多";            //"更多"
+
+//首页
+"HomeTitleText" = "佳兆业金服";
+"HomeFooterLabel" = "- 投 资 有 风 险  理 财 需 谨 慎 -";
+"HomeNewbeeTitle" = "新人福利";
+"HomeNewbeeSubtitle" = "限投10,000元";
+"HomeRecomTitle" = "定期理财";
+"HomeOwnerTitle" = "业主福利";
+"HomeOwnerTags" = "业主专享";
+
+
+//登录
+"LoginUserNameTextFieldPlaceholder" = "请输入用户名或手机号码";   //"登录用户名输入框默认"
+"LoginPasswordTextFieldPlaceholder" = "请输入密码";            //"登录密码输入框默认"
+"LoginText" = "登录";                                         //"登录"
+
+//登录页面跳转注册的文字
+"LoginTurn2RegisterText1" = "没有账户?";
+"LoginTurn2RegisterText2" = "注册领红包";
+"LoginForgetPasswordText" = "忘记密码";
+
+//请求未知错误提示
+"RequestUnknowErrorMessage" = "服务异常，请稍后再试";
+//请求网络错误提示
+"RequestNetworkErrorMessage" = "糟糕，网络出错了";
+//登录失败
+"LoginFailedErrorMessage1" = "登录失败，请确认输入的用户名/手机号/密码是否正确";
+"LoginFailedErrorMessage2" = "登录失败，请稍候再试";
+
+//注册
+"MobileTextFieldPlaceholder" = "请输入手机号码";                //"手机号输入框默认"
+"VerifyCodeTextFieldPlaceholder" = "请输入验证码";            //"验证码输入框默认"
+"NextActionText" = "下一步";                                 //"下一步"
+"SendVerifyCodeActionText" = "发送验证码";                                 //"发验证码"
+"ReSendVerifyCodeActionText" = "重新发送";                                 //"重新发送"
+"SecondText" = "秒";                                          //"秒"
+
+"RegisterText" = "注册";                                     //"注册"
+"HasAccountActionText" = "已有账户";                          //"已有账户"
+"SettingPasswordPlaceholder" = "设置密码(至少6位且包括字母数字)";                 //"注册设置密码"
+"RecommendedMobilePlaceholder" = "输入推荐人手机号或推荐码(非必填)";             //"推荐人"
+"RegisterAndGetRedpacketText" = "注册领取红包";                          //"注册领红包"
+"ReadAndAgreeText" = "我已阅读并同意";                          //"阅读同意"
+"RegisterProtocolText" = "注册协议";                          //"注册协议"
+
+"CheckVerifyCodeErrorText" = "验证码写错啦，请再核对下短信";                          //验证码错误
+"SendVerifyCodeErrorText" = "发送验证码失败，请再核对您的手机号码";                     //发送验证码失败
+
+"VerifyMobileText" = "校验手机号码";                          //验证手机号码
+"ForgotPasswordText" = "找回密码";                          //找回密码
+"PasswordInputPlaceholder1" = "输入新密码(至少6位且包括字母数字)";                 //"设置密码"
+"PasswordInputPlaceholder2" = "再次输入新密码(至少6位且包括字母数字)";                 //设置密码"
+
+"SetPasswordSuccessText" = "密码修改成功";                                    //密码修改成功
+"SetPasswordFailedText" = "密码修改失败";                                    //密码修改失败
+"SetPasswordInputDifferText" = "两次密码输入不一致";                    //密码输入不一致
+
+"RegisterProtocolUnCheckedText" = "请阅读并同意注册协议";                //注册协议未选中提示
+
+"RegisterFailedText" = "注册失败";                                    //注册失败
+"RegisterSuccessText" = "注册成功";                                    //注册成功
+
+"OpenAccountText" = "开户";                                    //开户
+"InvestText" = "投资";                                    //投资
+
+"RegisterSuccessShowText" = "恭喜您注册成功";                                    //注册成功
+"RegisterRedPacketShowText" = "200元红包已转入您的账户";                          //注册成功
+"OpenAccountShowText" = "开通托管账户即可开启投资之旅";                                    //注册成功
+
+"RedPacketActionText" = "查看我的红包";                                    //查看红包
+"OpenAccountActionText" = "立即开户";                                    //开户
+
+"RegisterPasswordInputPlaceholder1" = "输入密码(至少6位且包括字母数字)";             //"设置密码"
+"RegisterPasswordInputPlaceholder2" = "再次输入密码(至少6位且包括字母数字)";            //设置密码"
+
+"NewAndOldPasswordInputSameText" = "新旧密码输入一致,请重新输入";                 //新旧密码输入一致
+
+"ChangeLoginPasswordText" = "修改登录密码";                                       //修改登录密码
+"OldPasswordInputPlaceholder" = "请输入原始登录密码";                                //输入原始登录密码
+
+"ConfirmSubmissionText" = "确认修改";                                      //确认修改
+"ChangeLoginPasswordSuccessText" = "登录密码修改成功,请重新输入";            //密码修改成功
+"UpdateActionTitle" = "立即升级";                                  //立即升级
+
+//"ServerStatusShowCommentText1" = "为了给您带来更好的体验，佳兆业金服正在进行系统升级";
+//"ServerStatusShowCommentText2" = "预计半小时后恢复";
+//"ServerStatusShowCommentText3" = "如您有任何疑问，请联系客服热线：400-889-6099";
+
+"ServerStatusShowCommentText1" = "预计半小时后恢复";
+"ServerStatusShowCommentText2" = "为了给您带来更好的体验，佳兆业金服正在进行系统升级，如您有任何疑问，请联系客服热线：";
+"ServerStatusShowCommentText3" = "400-889-6099";
+
+"ServerStatusShowActionTitle" = "我知道了";
+
+"MyQRCodeTitle" = "我的二维码";
+
+"OpenAccountTitle" = "开通托管账户";                                    //开通托管账户
+"CallCustomerService1" = "请尝试重新提现或拨打客服热线400-889-6099";      //提现失败联系客服的提示
+"CallCustomerService2" = "请尝试重新充值或拨打客服热线400-889-6099";      //充值失败联系客服的提示
+
+//登录，注册，修改密码等界面提示
+"ReachedInputMaxLength" = "已达到最大输入位数";                      //输入框超过最大限制的时候的提示
+
+//"InputUserNameOrPhoneErrorText" = "请输入4-16位账号";            //登录用户名或手机号输入
+"InputUserNameOrPhoneErrorText" = "请输入用户名或手机号码";          //登录用户名或手机号输入
+"InputPasswordErrorText" = "请输入正确密码";                                //登录密码输入
+"InputPasswordErrorText1" = "请输入6-16位密码,至少包含数字,字母,符号中的两种";    //注册密码输入
+"InputPhoneErrorText" = "请输入正确的手机号码";                               //手机号输入提示
+"InputVerifyCodeErrorText" = "请输入正确的验证码";                            //验证码输入提示
+"InputOldPasswordErrorText" = "原始密码错误";                                //登录密码输入
+"InputPostcodeErrorText" = "邮编只能是6位数字";                 //邮编位数输入错误提示
+"InputNameErrorText" = "联系人姓名最多10位字符";                  //收货人位数输入错误提示
+"InputDetailInfoErrorText" = "详细信息最多64个字符";              //详细信息位数输入错误提示
+
+//分享
+"ShareUnInstallQQAPPShowErrorInfo" = "未安装QQ客户端，不能分享";
+"ShareUnInstallWechatAPPShowErrorInfo" = "未安装微信客户端，不能分享";
+"ShareUnInstallSinaWeiboAPPShowErrorInfo" = "未安装新浪微博客户端，不能分享";
+
+"ShareShowErrorTitle" = "提示";
+
+//广告启动页面
+"JumpActionTitle" = "跳过";
+
+//奖励提取
+"RewardGetSuccessText" = "奖励提取成功";
+"RewardGetErrorText" = "奖励提取失败";
+//京东E卡
+"JingDongCard" = "京东E卡";
+"JingDongCardRecord" ="发放记录";
+"JDCardFailText" = "制卡失败原因123124,";
+"JDCardServiceText" = "联系客服";
+//指纹
+"AuthenticationWithFingerprintReason" = "请验证指纹并登陆";
+//在设置密码界面打开指纹开关的提示
+"AuthenticationWithFingerprintInSettingPasswordReason" = "通过Home键验证已有指纹";
+"UseFingerprintLoginTitle" = "使用指纹登录";
+"TurnToOtherLoginPageTitle" = "登录其它账户";
+
+//手势
+"SettingGesturePasswordTitle" = "请绘制解锁图案";
+"SettingGesturePasswordTitle2" = "再次绘制解锁图案";
+"GesturePasswordCheckInputTitle" = "请输入手势密码解锁";
+"GesturePasswordSettingInputTitle" = "请绘制解锁图案，至少连接";
+"GesturePasswordSettingInputUnitTitle" = "个点";
+"GesturePasswordCheckInputErrorTitle" = "密码错误，还可以输入";
+"TimesTitle" = "次";
+"LoginOtherAccountTitle" = "使用账号登录";
+"GesturePasswordInputLenthErrorTitle1" = "至少链接";
+"GesturePasswordInputLenthErrorTitle2" = "个点，请重新输入";
+"GesturePasswordInputDifferentErrorTitle" = "与上次绘制不一致，请重新绘制";
+"GesturePasswordSettingTitle" = "设置手势密码";
+
+//密码管理
+"PasswordManngerTitle" = "密码管理";
+"ModifyLoginPasswordTitle" = "修改登录密码";
+"ModifyThirdPartLoginPasswordTitle" = "修改第三方托管账户登录密码";
+"ModifyThirdPartPayPasswordTitle" = "修改第三方托管账户交易密码";
+
+//登录密码修改
+"VerifyCurrentPasswordTitle" = "验证现有密码";
+"SettingNewPasswordTitle" = "设置新密码";
+"SettingNewPasswordDescriptionText" = "6-16字符，至少包含数字,字母,符号中的两种";
+
+//银行卡
+"AddBankCardTitle" = "添加银行卡";
+"UnbindBankCardTitle" = "解绑";
+"SyncBankCardSuccessTitle" = "同步银行卡成功";
+"BankCardTitle" = "我的银行卡";
+"BankDebitCardTitle" = "储蓄卡";
+
+//分享工具相关
+"NoticeTitle" = "提示";
+"ShareSuccessTitle" = "分享成功";
+"ShareFailedTitle" = "分享失败，请重试";
+
+//资金记录
+"FundRecordTitle" = "资金记录";
+
+//充值相关
+"RechargeResultTitle" = "充值结果";
+"ChaRechargeResultTitle" = "差额充值成功";
+
+//我的投资列表相关
+"AnnualInterestRate" = "年化利率";
+"DueTime" = "期限";
+"Investment" = "投资金额";
+"InvestTime" = "投资时间";
+"RepayMethod" = "还款方式";
+"CollectInterest" = "待收本息";
+"PayOffTime" = "还清时间";
+"EarnedIncome" = "已赚取收益";
+
+//开户相关
+"OpenAccountFail" = "开户失败";
+"OpenAccountSuccess" = "开户成功";
+"Confirm" = "确定";
+"ReopenAccount" = "重新开户";
+"ImmediateInvestment" = "立即投资";
+"ImmediateRecharge" = "立即充值";
+
+//绑定手机号
+"BindPhone"= "绑定手机号";
+
+//可提奖励
+"ValidReward" = "可提奖励";
+"RewardDetail" = "奖励明细";
+"RewardExtracting" = "提取中...";
+"SoonExtract" = "立 即 提 取";
+//紧急联系人
+"EmegencyContact" = "紧急联系人";
+"Save" = "保存";
+"CorrectPhone"="请输入正确手机号";
+"ContactHeader" = "仅在紧急情况下联系不到您本人时使用";
+"NoInvestTarget" = "暂无投资标的";
+"Cash" = "现金券";
+"InvestmentReturn" = "投资返现";
+
+//个人信息
+"Email" = "电子邮箱";
+"PersonalInfo" = "个人信息";
+"NotCertified" = "未认证";
+"Certified" ="已认证";
+
+"Unbound" = "未绑定";
+"AddressAdd"="新增地址";
+"AddrHeader" = "地址信息仅供给第三方物流用于邮寄资料、礼品等";
+
+//我的投资
+"MyInvest" = "我的投资";
+"HiddenStar" = "****";
+"FrozenAmount" = "冻结金额";
+"PaymentPlan" = "回款计划";
+"AboutUs" = "关于我们";
+"VerUpgrade" = "点击升级↑";
+
+//我的推广
+"MyPromote" = "我的推广";
+"NoPromoteRecord" = "目前无推广记录";
+"PhoneVerify" = "手机认证";
+
+//个人中心
+"AccountFooterTitle" = "-  在 佳 理 财 很 安 心  -";
+
+
+//充值
+"RechargeTitle" = "充值";
+"RechargeBankcardPay" = "银行卡充值";
+"RechargeOtherPay" = "其它支付方式";
+"RechargeQuickPay" = "快捷支付";
+"RechargeQuickPayDetail" = "支持主流银行快捷支付服务";
+"RechargeUnionPay" = "网银支付";
+"RechargeUnionPayDetail" = "支持多家网银支付服务";
+"RechargeUnionNFCPay" = "银联无卡支付,";
+"RechargeConfirm"   = "确认充值";
+"RechargeInputTips" = "请输入充值的金额";
+"RechargeOutOfLimit" = "超出银行单笔限额";
+"RechargeSelectedBankCard" = "选择银行卡";
+"RechargeOpenCardTips" = "以下银行卡需先开通银联无卡支付, 否则无法充值, 如何开通?";
+"RechargeOpenWay" = "如何开通?";
+"RechargeOpenOnlinePay" = "开通在线支付";
+"RechargeHowToOpenNFCPay" = "如何开通银联无卡支付？";
+"RechargeNoneBank" = "暂无银行信息";
+"RechargeDescription" = "充值说明";
+"RechargeUnbind" = "解绑";
+
+
+//提现
+"DepositTitle" = "提现";
+"DepositFreeTake" = "您本月还有%ld次免费提现机会";
+"DepositAddBankcard" = "添加银行卡";
+"DepositDescription" = "提现说明";
+"DepositEnterAmount" = "请输入提现的金额";
+"DepositOutOfLimit" = "超过可提取余额";
+"DepositTaked" = "提取";
+
+//自动投标
+"AutoLoanTitle" = "自动投标";
+"AutoLoanOpen" = "开启自动投标";
+"AutoLoanClose" = "关闭自动投标";
+
+//投资记录
+"InvestHistoryTitle" = "投资记录";
+"InvestHistoryNone" = "暂无投资记录";
+
+//资产明细
+"AssetTitle" = "资产明细";
+"TotalAssetTitle" = "总资产(元)";
+"AvailableBalanceTitle" = "可用余额";
+"FrozenBalanceTitle" = "冻结金额";
+"DueInFundTitle" = "待收本金";
+"DueInInterestTitle" = "待收利息";
+"GetAssetDetailErrorMessage" = "获取资产明细错误";
+
+//可提奖励
+"TotalExtractableAmtTitle" = "可提奖励(元)";
+"ValidRewardForExtendTitle" = "推广收益";
+"ValidRewardForCashTitle" = "现金券";
+"ValidRewardForRedPacketTitle" = "红包激活";
+"TakeRewardActionTitle" = "立即提取";
+"TakeRewardActionDescriptionTitle" = "奖励提取说明:";
+
+"GetRewardDetailErrorMessage" = "获取可提奖励明细错误";
+"TakeRewardActionErrorMessage" = "奖励提取错误";
+
+//用户理财级别
+"FinancialAdvisorGradeText0" = "黑名单";
+"FinancialAdvisorGradeText1" = "理财师";
+"FinancialAdvisorGradeText2" = "高级理财师";
+"FinancialAdvisorGradeText3" = "签约理财师";
+"FinancialAdvisorGradeText4" = "资深理财师";
+
+//回款日历
+"RepayCalendarText" = "回款日历";
+
+"RewardInputAboveMaxErrorMessage" = "单次最多可提取";
+"RewardInputAboveTotalErrorMessage" = "输入金额超过可提取奖励";
+"RewardInputFormatErrorMessage" = "格式错误";
+
+"TakeRewardInputTitle" = "提取金额";
+"TakeRewardInputPlaceholderTitle" = "每笔最多";
+"MailNameMaxLengthTitle" =  "邮箱名不得超过40个字符";
+
+//请求失败
+"RequestFailedMsgText" =  "请求失败";
+

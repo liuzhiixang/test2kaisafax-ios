@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WeChat</key>
+	<dict>
+		<key>AppID</key>
+		<string>wxf6a222b3f4310485</string>
+		<key>AppSecret</key>
+		<string>e6e046d9bbfd57b90844d138b95faf0b</string>
+	</dict>
+	<key>QQ</key>
+	<dict>
+		<key>AppID</key>
+		<string>1105355157</string>
+		<key>AppKey</key>
+		<string>xyyQY4A28fUAL8WN</string>
+	</dict>
+	<key>SinaWeibo</key>
+	<dict>
+		<key>AppKey</key>
+		<string>2057742102</string>
+		<key>AppSecret</key>
+		<string>37b2c52cf23778b4949015b86ef85f81</string>
+		<key>RedirectURL</key>
+		<string>http://www.kaisafax.com</string>
+	</dict>
+</dict>
+</plist>

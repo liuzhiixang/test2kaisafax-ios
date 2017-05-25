@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSForgetVC">
+            <connections>
+                <outlet property="contentScroll" destination="0E2-wQ-m0T" id="EgR-dl-49f"/>
+                <outlet property="contentView" destination="gcA-D6-Uvi" id="3zV-zb-W33"/>
+                <outlet property="nextActionBtn" destination="HMV-rO-6qb" id="aVt-vX-9yA"/>
+                <outlet property="passwordTF1" destination="VLJ-0W-yhG" id="U5y-Re-7GE"/>
+                <outlet property="passwordTF2" destination="b9A-q9-qIq" id="YZk-AR-iOj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0E2-wQ-m0T">
+                    <frame key="frameInset" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gcA-D6-Uvi">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VLJ-0W-yhG" customClass="KSLRTextField">
+                                    <frame key="frameInset" minX="20" minY="30" width="560" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="RJh-fR-Yxg"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppTextField"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="b9A-q9-qIq" customClass="KSLRTextField">
+                                    <frame key="frameInset" minX="20" minY="90" width="560" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="osH-1b-imj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppTextField"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMV-rO-6qb">
+                                    <frame key="frameInset" minX="20" minY="150" width="560" height="45"/>
+                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="VBY-CJ-XiP"/>
+                                    </constraints>
+                                    <state key="normal" title="next"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppOrangeButton"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="VLJ-0W-yhG" firstAttribute="leading" secondItem="gcA-D6-Uvi" secondAttribute="leading" constant="20" id="3zO-L2-BNc"/>
+                                <constraint firstAttribute="trailing" secondItem="b9A-q9-qIq" secondAttribute="trailing" constant="20" id="41w-PV-ILj"/>
+                                <constraint firstItem="b9A-q9-qIq" firstAttribute="leading" secondItem="gcA-D6-Uvi" secondAttribute="leading" constant="20" id="KwB-G6-3IG"/>
+                                <constraint firstAttribute="trailing" secondItem="HMV-rO-6qb" secondAttribute="trailing" constant="20" id="Rgc-QA-fRT"/>
+                                <constraint firstAttribute="trailing" secondItem="VLJ-0W-yhG" secondAttribute="trailing" constant="20" id="TSP-Sc-1rU"/>
+                                <constraint firstItem="b9A-q9-qIq" firstAttribute="top" secondItem="VLJ-0W-yhG" secondAttribute="bottom" constant="20" id="XCO-GN-QaX"/>
+                                <constraint firstItem="VLJ-0W-yhG" firstAttribute="top" secondItem="gcA-D6-Uvi" secondAttribute="top" constant="30" id="aNT-1h-GGa"/>
+                                <constraint firstItem="HMV-rO-6qb" firstAttribute="top" secondItem="b9A-q9-qIq" secondAttribute="bottom" constant="20" id="aqY-NL-f27"/>
+                                <constraint firstItem="HMV-rO-6qb" firstAttribute="leading" secondItem="gcA-D6-Uvi" secondAttribute="leading" constant="20" id="zEL-l8-3W9"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="gcA-D6-Uvi" firstAttribute="leading" secondItem="0E2-wQ-m0T" secondAttribute="leading" id="7IF-Ju-ggn"/>
+                        <constraint firstAttribute="bottom" secondItem="gcA-D6-Uvi" secondAttribute="bottom" id="Iuw-yf-Yrr"/>
+                        <constraint firstAttribute="trailing" secondItem="gcA-D6-Uvi" secondAttribute="trailing" id="XSa-51-zYa"/>
+                        <constraint firstItem="gcA-D6-Uvi" firstAttribute="width" secondItem="0E2-wQ-m0T" secondAttribute="width" id="isM-bu-Hmt"/>
+                        <constraint firstItem="gcA-D6-Uvi" firstAttribute="top" secondItem="0E2-wQ-m0T" secondAttribute="top" id="r4N-Qs-bPI"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0E2-wQ-m0T" secondAttribute="trailing" id="4Bi-I3-nTU"/>
+                <constraint firstItem="0E2-wQ-m0T" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4Ty-3g-R1R"/>
+                <constraint firstAttribute="bottom" secondItem="0E2-wQ-m0T" secondAttribute="bottom" id="5Uo-di-4CZ"/>
+                <constraint firstItem="0E2-wQ-m0T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Bwk-Wi-HWK"/>
+                <constraint firstItem="gcA-D6-Uvi" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="IAf-V5-ndY"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

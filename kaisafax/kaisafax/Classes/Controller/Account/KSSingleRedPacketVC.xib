@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSSingleRedPacketVC">
+            <connections>
+                <outlet property="noRedBagLabel" destination="yw6-SO-t9F" id="lC3-UN-cuW"/>
+                <outlet property="tabView" destination="Qff-DX-5v2" id="DFi-S5-QBE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Qff-DX-5v2">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="OY0-jx-JuN"/>
+                        <outlet property="delegate" destination="-1" id="O8C-a2-5zj"/>
+                    </connections>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无红包" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw6-SO-t9F">
+                    <rect key="frame" x="110" y="230" width="100" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="KAa-oy-zEe"/>
+                        <constraint firstAttribute="width" constant="100" id="pss-T2-zUO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                    <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yw6-SO-t9F" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3JW-tq-qqk"/>
+                <constraint firstItem="Qff-DX-5v2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fw8-DV-bbh"/>
+                <constraint firstAttribute="trailing" secondItem="Qff-DX-5v2" secondAttribute="trailing" id="LFJ-4M-82S"/>
+                <constraint firstItem="yw6-SO-t9F" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="PHp-Cf-L8K"/>
+                <constraint firstAttribute="bottom" secondItem="Qff-DX-5v2" secondAttribute="bottom" id="aEe-7K-ypT"/>
+                <constraint firstItem="Qff-DX-5v2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lJE-DJ-fex"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

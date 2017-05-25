@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SNSShareToSina</key>
+	<dict>
+		<key>title</key>
+		<string>新浪</string>
+		<key>imageName</key>
+		<string>logo_sinaweibo</string>
+		<key>SNSType</key>
+		<string>5</string>
+	</dict>
+	<key>SNSShareToQQ</key>
+	<dict>
+		<key>title</key>
+		<string>QQ</string>
+		<key>imageName</key>
+		<string>logo_qq</string>
+		<key>SNSType</key>
+		<string>4</string>
+	</dict>
+	<key>SNSShareToQzone</key>
+	<dict>
+		<key>title</key>
+		<string>QQ空间</string>
+		<key>imageName</key>
+		<string>logo_qzone</string>
+		<key>SNSType</key>
+		<string>3</string>
+	</dict>
+	<key>SNSShareToWechatSession</key>
+	<dict>
+		<key>title</key>
+		<string>微信</string>
+		<key>imageName</key>
+		<string>logo_wechat</string>
+		<key>SNSType</key>
+		<string>1</string>
+	</dict>
+	<key>SNSShareToWechatTimeline</key>
+	<dict>
+		<key>title</key>
+		<string>朋友圈</string>
+		<key>imageName</key>
+		<string>logo_wechatmoments</string>
+		<key>SNSType</key>
+		<string>2</string>
+	</dict>
+	<key>SNSShareToFaceToFace</key>
+	<dict>
+		<key>title</key>
+		<string>面对面扫码</string>
+		<key>imageName</key>
+		<string>logo_quarcode</string>
+		<key>SNSType</key>
+		<string>6</string>
+	</dict>
+</dict>
+</plist>

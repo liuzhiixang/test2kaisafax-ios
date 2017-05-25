@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSGestureSettingVC">
+            <connections>
+                <outlet property="gestureInfoView" destination="sdY-1A-txW" id="t7Q-nP-JSq"/>
+                <outlet property="gestureLockView" destination="a6q-m2-fAN" id="89K-cg-nKG"/>
+                <outlet property="msgLabel" destination="NTV-gh-jWj" id="pmR-JR-XT7"/>
+                <outlet property="view" destination="4QQ-r6-oSB" id="B5P-nr-YUm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="4QQ-r6-oSB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTV-gh-jWj" customClass="SQLockLabel">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="3PS-HN-d08"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHh-8l-ZQD" userLabel="Center Container">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a6q-m2-fAN" userLabel="Gesture View" customClass="SQGestureView">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="a6q-m2-fAN" secondAttribute="height" multiplier="1:1" id="Zpw-pG-nLc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="a6q-m2-fAN" firstAttribute="centerY" secondItem="rHh-8l-ZQD" secondAttribute="centerY" id="Ctu-2B-Bwd"/>
+                        <constraint firstItem="a6q-m2-fAN" firstAttribute="centerX" secondItem="rHh-8l-ZQD" secondAttribute="centerX" id="Eyy-JI-wRN"/>
+                        <constraint firstItem="a6q-m2-fAN" firstAttribute="width" secondItem="rHh-8l-ZQD" secondAttribute="width" multiplier="13:15" id="n1j-3p-kwM"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mK-Um-SKa">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="MB3-Qq-LAN"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" red="0.62745098040000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdY-1A-txW" userLabel="Gesture Info" customClass="SQGestureInfoView">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="sdY-1A-txW" secondAttribute="height" multiplier="1:1" id="vYX-pF-6yn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1mK-Um-SKa" firstAttribute="top" secondItem="rHh-8l-ZQD" secondAttribute="bottom" constant="2" id="5jP-Rw-GjH"/>
+                <constraint firstItem="rHh-8l-ZQD" firstAttribute="leading" secondItem="4QQ-r6-oSB" secondAttribute="leading" id="7Jg-KH-cqS"/>
+                <constraint firstItem="sdY-1A-txW" firstAttribute="centerX" secondItem="4QQ-r6-oSB" secondAttribute="centerX" id="Dje-vx-Osf"/>
+                <constraint firstItem="1mK-Um-SKa" firstAttribute="leading" secondItem="4QQ-r6-oSB" secondAttribute="leading" constant="20" id="FzQ-Im-zKI"/>
+                <constraint firstItem="NTV-gh-jWj" firstAttribute="leading" secondItem="4QQ-r6-oSB" secondAttribute="leading" id="KhB-7A-t8A"/>
+                <constraint firstAttribute="trailing" secondItem="1mK-Um-SKa" secondAttribute="trailing" constant="20" id="MHS-uC-Dme"/>
+                <constraint firstAttribute="trailing" secondItem="rHh-8l-ZQD" secondAttribute="trailing" id="Td3-wc-gfp"/>
+                <constraint firstItem="NTV-gh-jWj" firstAttribute="top" secondItem="sdY-1A-txW" secondAttribute="bottom" constant="20" id="WvE-eF-8Hk"/>
+                <constraint firstItem="sdY-1A-txW" firstAttribute="width" secondItem="4QQ-r6-oSB" secondAttribute="width" multiplier="1:5" id="YMG-qA-Rs6"/>
+                <constraint firstItem="rHh-8l-ZQD" firstAttribute="top" secondItem="NTV-gh-jWj" secondAttribute="bottom" constant="5" id="miD-Ec-Ogy"/>
+                <constraint firstAttribute="bottom" secondItem="1mK-Um-SKa" secondAttribute="bottom" constant="20" id="pXk-we-7sj"/>
+                <constraint firstAttribute="trailing" secondItem="NTV-gh-jWj" secondAttribute="trailing" id="pdc-2R-TQY"/>
+                <constraint firstItem="sdY-1A-txW" firstAttribute="top" secondItem="4QQ-r6-oSB" secondAttribute="top" constant="60" id="ufI-qy-o3h"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

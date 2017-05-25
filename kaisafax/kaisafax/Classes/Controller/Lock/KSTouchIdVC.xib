@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSTouchIdVC">
+            <connections>
+                <outlet property="fingerprintBtn" destination="pdD-5J-pI8" id="sK9-ly-zQr"/>
+                <outlet property="fingerprintTitleLabel" destination="ohf-WU-8WC" id="S7k-zP-k47"/>
+                <outlet property="otherLoginBtn" destination="xHt-PJ-su0" id="FTq-O5-3Hg"/>
+                <outlet property="userIconView" destination="AIp-BR-4zt" id="3Hw-J4-XcS"/>
+                <outlet property="userNameLabel" destination="MTP-Fz-C1F" id="keW-z5-yvx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_defaultphoto_big" translatesAutoresizingMaskIntoConstraints="NO" id="AIp-BR-4zt">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="Qrp-ZL-mk5"/>
+                        <constraint firstAttribute="width" secondItem="AIp-BR-4zt" secondAttribute="height" multiplier="1:1" id="YRJ-aH-HNt"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTP-Fz-C1F">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="oaG-cj-Dw2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdD-5J-pI8">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pdD-5J-pI8" secondAttribute="height" multiplier="1:1" id="ur4-wB-nna"/>
+                        <constraint firstAttribute="width" constant="70" id="ywL-JA-VIL"/>
+                    </constraints>
+                    <state key="normal" image="fingerprint_default_icon"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohf-WU-8WC">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="aqh-WV-hjJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.23921568627450979" green="0.23921568627450979" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHt-PJ-su0">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="WZB-lC-De9"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.23921568627450979" green="0.23921568627450979" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AIp-BR-4zt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="0w5-bP-cGr"/>
+                <constraint firstItem="ohf-WU-8WC" firstAttribute="top" secondItem="pdD-5J-pI8" secondAttribute="bottom" constant="20" id="2wH-Ot-at8"/>
+                <constraint firstItem="MTP-Fz-C1F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8WC-Ow-MjW"/>
+                <constraint firstAttribute="trailing" secondItem="ohf-WU-8WC" secondAttribute="trailing" id="IEc-AC-7TI"/>
+                <constraint firstAttribute="trailing" secondItem="xHt-PJ-su0" secondAttribute="trailing" id="JTp-wY-LhD"/>
+                <constraint firstAttribute="trailing" secondItem="MTP-Fz-C1F" secondAttribute="trailing" id="NFB-wa-6E2"/>
+                <constraint firstItem="pdD-5J-pI8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="RX8-lE-haM"/>
+                <constraint firstItem="ohf-WU-8WC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="T6i-k6-Xd3"/>
+                <constraint firstItem="AIp-BR-4zt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hWu-BO-krx"/>
+                <constraint firstItem="MTP-Fz-C1F" firstAttribute="top" secondItem="AIp-BR-4zt" secondAttribute="bottom" constant="20" id="kDy-gY-v3t"/>
+                <constraint firstItem="pdD-5J-pI8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lrX-Zh-IlJ"/>
+                <constraint firstAttribute="bottom" secondItem="xHt-PJ-su0" secondAttribute="bottom" constant="30" id="qJ8-TV-Evb"/>
+                <constraint firstItem="xHt-PJ-su0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yUz-ID-3EI"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fingerprint_default_icon" width="70" height="70"/>
+        <image name="ic_defaultphoto_big" width="64" height="64"/>
+    </resources>
+</document>

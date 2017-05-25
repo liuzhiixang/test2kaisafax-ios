@@ -1,0 +1,57 @@
+//
+//  kaisafax_Prefix.pch
+//  kaisafax
+//
+//  Created by SemnyQu on 14-10-21.
+//  Copyright (c) 2014年 kaisafax. All rights reserved.
+//
+
+//#ifndef kaisafax_kaisafax_Prefix_pch
+//#define kaisafax_kaisafax_Prefix_pch
+//
+//// Include any system framework and library headers here that should be included in all compilation units.
+//// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//#import <UIKit/UIKit.h>
+//#import <Foundation/Foundation.h>
+//#endif
+
+
+#import <Availability.h>
+
+
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifndef __cplusplus
+//NUI
+#import "NUIRenderer.h"
+#import "NUIAppearance.h"
+#import "NUIHelper.h"
+#import "JXSDKHelper.h"
+#import "JXTool.h"
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreText/CoreText.h>
+
+#import <AssetsLibrary/AssetsLibrary.h>
+
+#import "KSConst.h"
+
+#import "KSConfig.h"
+
+#import "KSWording.h"
+
+#import "KSLogger.h"
+
+#import "ReactiveCocoa.h"
+
+#import "LGAlertView.h"
+#endif
+
+
+

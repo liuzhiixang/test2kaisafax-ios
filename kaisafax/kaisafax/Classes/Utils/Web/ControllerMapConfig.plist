@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SXBidSucViewController</key>
+	<string>KSBidResultVC</string>
+	<key>SXTabBarController</key>
+	<string>KSMainVC</string>
+	<key>SXOpenAccountSucVController</key>
+	<string>KSOpenAccountResultVC</string>
+	<key>SXCashGetSucViewController</key>
+	<string>KSDepositResultVC</string>
+	<key>SXCashAddSucViewController</key>
+	<string>KSRechargeResultVC</string>
+	<key>SXMyRedReppersViewController</key>
+	<string>KSWholeNewRedPacketVC</string>
+	<key>SXRecommendController</key>
+	<string>KSHomeVC</string>
+	<key>SXInvetListVController</key>
+	<string>KSInvestVC</string>
+	<key>SXUserAssetViewController</key>
+	<string>KSNewAccountVC</string>
+	<key>SXInvestDetailVController</key>
+	<string>KSInvestDetailVC</string>
+	<key>SXMyExtendVController</key>
+	<string>KSPromoteVC</string>
+	<key>提现</key>
+	<string>KSDepositResultVC</string>
+	<key>投标</key>
+	<string>KSBidResultVC</string>
+	<key>充值</key>
+	<string>KSRechargeResultVC</string>
+</dict>
+</plist>

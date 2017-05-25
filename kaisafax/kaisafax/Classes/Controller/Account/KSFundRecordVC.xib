@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSFundRecordVC">
+            <connections>
+                <outlet property="noFundChars" destination="Ctf-19-aZQ" id="jRV-7C-RnV"/>
+                <outlet property="tableView" destination="TK8-fl-AzA" id="D29-HW-Cy6"/>
+                <outlet property="view" destination="jLz-t4-Xp7" id="JMf-vj-O3Y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="jLz-t4-Xp7">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TK8-fl-AzA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0Ww-TX-5Sg"/>
+                        <outlet property="delegate" destination="-1" id="koi-l0-cQw"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ctf-19-aZQ" userLabel="noFundView">
+                    <rect key="frame" x="20" y="190" width="280" height="100"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_no_fund" translatesAutoresizingMaskIntoConstraints="NO" id="tRa-ZZ-YKc">
+                            <rect key="frame" x="91" y="0.0" width="98" height="62"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="tRa-ZZ-YKc" secondAttribute="height" multiplier="49:31" id="Uly-8x-nP5"/>
+                                <constraint firstAttribute="width" constant="98" id="tbs-jZ-br8"/>
+                                <constraint firstAttribute="height" constant="62" id="zGf-e4-EXt"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="zGf-e4-EXt"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="暂无投资记录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRR-1j-QuS">
+                            <rect key="frame" x="0.0" y="-190" width="280" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="tRa-ZZ-YKc" firstAttribute="top" secondItem="Ctf-19-aZQ" secondAttribute="top" id="6TN-bI-CW2"/>
+                        <constraint firstItem="zRR-1j-QuS" firstAttribute="leading" secondItem="Ctf-19-aZQ" secondAttribute="leading" id="J6O-f1-zQF"/>
+                        <constraint firstItem="tRa-ZZ-YKc" firstAttribute="centerX" secondItem="Ctf-19-aZQ" secondAttribute="centerX" id="RsE-dl-gTZ"/>
+                        <constraint firstAttribute="height" constant="100" id="cPh-bf-u67"/>
+                        <constraint firstAttribute="trailing" secondItem="zRR-1j-QuS" secondAttribute="trailing" id="jg6-eB-rdn"/>
+                        <constraint firstItem="zRR-1j-QuS" firstAttribute="top" secondItem="tRa-ZZ-YKc" secondAttribute="bottom" constant="16" id="l2s-Zi-4gc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ctf-19-aZQ" firstAttribute="centerX" secondItem="jLz-t4-Xp7" secondAttribute="centerX" id="OM0-HV-YBl"/>
+                <constraint firstItem="TK8-fl-AzA" firstAttribute="leading" secondItem="jLz-t4-Xp7" secondAttribute="leading" id="Wlf-py-dzI"/>
+                <constraint firstItem="TK8-fl-AzA" firstAttribute="top" secondItem="jLz-t4-Xp7" secondAttribute="top" id="XGO-nC-PVr"/>
+                <constraint firstAttribute="trailing" secondItem="TK8-fl-AzA" secondAttribute="trailing" id="ghx-vQ-pea"/>
+                <constraint firstAttribute="bottom" secondItem="TK8-fl-AzA" secondAttribute="bottom" id="gq9-J2-W1f"/>
+                <constraint firstItem="Ctf-19-aZQ" firstAttribute="leading" secondItem="jLz-t4-Xp7" secondAttribute="leading" constant="20" id="iqx-iR-X8i"/>
+                <constraint firstItem="Ctf-19-aZQ" firstAttribute="centerY" secondItem="jLz-t4-Xp7" secondAttribute="centerY" id="qx4-Vh-FTF"/>
+                <constraint firstAttribute="trailing" secondItem="Ctf-19-aZQ" secondAttribute="trailing" constant="20" id="z51-RC-GsB"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_no_fund" width="98" height="62"/>
+    </resources>
+</document>

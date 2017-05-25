@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="KSPromoteCell" rowHeight="52" id="KGk-i7-Jjw" customClass="KSPromoteCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="王**" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJe-Ka-uLZ" customClass="KSLabel">
+                        <rect key="frame" x="32" y="8" width="60" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="LqV-az-X7L"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallDarkGrayLabel"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016/05/50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gjG-vY-HJW" customClass="KSLabel">
+                        <rect key="frame" x="206" y="16" width="98" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallDarkGrayLabel"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已投资" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YH7-jp-dPx" customClass="KSLabel">
+                        <rect key="frame" x="100" y="16" width="98" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallDarkGrayLabel"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YH7-jp-dPx" firstAttribute="leading" secondItem="RJe-Ka-uLZ" secondAttribute="trailing" constant="8" id="BgI-sy-PV9"/>
+                    <constraint firstItem="gjG-vY-HJW" firstAttribute="leading" secondItem="YH7-jp-dPx" secondAttribute="trailing" constant="8" id="KV8-tf-pNE"/>
+                    <constraint firstItem="RJe-Ka-uLZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="PNL-bG-0Um"/>
+                    <constraint firstItem="gjG-vY-HJW" firstAttribute="width" secondItem="YH7-jp-dPx" secondAttribute="width" id="PYg-xc-cqY"/>
+                    <constraint firstItem="YH7-jp-dPx" firstAttribute="centerY" secondItem="RJe-Ka-uLZ" secondAttribute="centerY" id="Qad-QW-5En"/>
+                    <constraint firstItem="RJe-Ka-uLZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="aaL-Lu-l0g"/>
+                    <constraint firstItem="gjG-vY-HJW" firstAttribute="centerY" secondItem="RJe-Ka-uLZ" secondAttribute="centerY" id="cIT-ET-sYB"/>
+                    <constraint firstAttribute="bottom" secondItem="RJe-Ka-uLZ" secondAttribute="bottom" constant="8" id="mi2-uY-zTX"/>
+                    <constraint firstAttribute="trailing" secondItem="gjG-vY-HJW" secondAttribute="trailing" constant="16" id="vvF-Oy-ua6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="gjG-vY-HJW" id="Rb1-6J-74g"/>
+                <outlet property="nameLabel" destination="RJe-Ka-uLZ" id="wKl-Sk-g0Q"/>
+                <outlet property="statusLabel" destination="YH7-jp-dPx" id="aZ0-eO-DN6"/>
+            </connections>
+            <point key="canvasLocation" x="331" y="390"/>
+        </tableViewCell>
+    </objects>
+</document>

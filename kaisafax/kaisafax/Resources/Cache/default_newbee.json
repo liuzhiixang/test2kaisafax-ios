@@ -1,0 +1,50 @@
+{
+  "testLoan": "1",
+  "contract": "f4a53f1f-9f93-4c41-b79c-ec015e50f9e3",
+  "newbeeAmount": "10000",
+  "serverTime": "1474869226770",
+  "sticky": {
+    "userId": "5f96eb4c-d697-489d-98f8-80c475e0676e",
+    "leftAmount": "10000",
+    "additionalRate": "0",
+    "status": "FAILED",
+    "sticky": "1",
+    "newbeeAmount": "10000",
+    "amount": "100000000",
+    "assignable": "0",
+    "duration": {
+      "totalMonths": "0",
+      "years": "0",
+      "days": "7",
+      "months": "0",
+      "totalDays": "7"
+    },
+    "title": "新人福利",
+    "legacy": "0",
+    "maxAutoInvestPercetage": "1",
+    "discount": "1",
+    "loanProduct": "NEWBEE",
+    "id": "ba34d2ac-dba0-4039-bb3c-4f92b9e873bb",
+    "investRule": {
+      "maxAmount": "10000",
+      "stepAmount": "100",
+      "minAmount": "100"
+    },
+    "loanProductId": "05eac034-4591-4c6f-b135-62895bbab200",
+    "submitTime": "1474168196000",
+    "recommendLabel": "NOLABEL",
+    "newbee": "1",
+    "investAmount": "29900",
+    "openTime": "1474168254000",
+    "repayMethod": "BULLET_REPAYMENT",
+    "provider": {
+      "realm": "EMPLOYEE",
+      "objectId": "7142ea39-e03f-41bf-af0a-7434557d2625"
+    },
+    "timeOut": "72",
+    "rate": "1500",
+    "finishTime": "1474860784000",
+    "investCount": "3"
+  },
+  "newbeeTime": "-1"
+}

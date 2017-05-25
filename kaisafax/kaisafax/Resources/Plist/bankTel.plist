@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ICBC</key>
+	<string>工商银行客服热线: 95588</string>
+	<key>ABC</key>
+	<string>农业银行客服热线: 95599</string>
+	<key>CMB</key>
+	<string>招商银行客服热线: 95555</string>
+	<key>CCB</key>
+	<string>建设银行客服热线: 95533</string>
+	<key>BCCB</key>
+	<string>北京银行客服热线: 95526</string>
+	<key>BJRCB</key>
+	<string>北京农村商业银行客服热线: 400-669-6918</string>
+	<key>BOC</key>
+	<string>中国银行客服热线: 95566</string>
+	<key>BOCOM</key>
+	<string>交通银行客服热线: 95559</string>
+	<key>CMBC</key>
+	<string>民生银行客服热线: 95568</string>
+	<key>BOS</key>
+	<string>上海银行客服热线: 95594</string>
+	<key>CBHB</key>
+	<string>渤海银行客服热线: 400-888-8811</string>
+	<key>CEB</key>
+	<string>光大银行客服热线: 95595</string>
+	<key>CIB</key>
+	<string>兴业银行客服热线: 95561</string>
+	<key>CITIC</key>
+	<string>中信银行客服热线: 95558</string>
+	<key>CZB</key>
+	<string>浙商银行客服热线: 95527</string>
+	<key>GDB</key>
+	<string>广发银行客服热线: 95508</string>
+	<key>HKBEA</key>
+	<string>东亚银行客服热线: 800-830-3811</string>
+	<key>HXB</key>
+	<string>华夏银行客服热线: 95577</string>
+	<key>HZCB</key>
+	<string>杭州银行客服热线: 95398</string>
+	<key>NJCB</key>
+	<string>南京银行客服热线: 400-889-6400</string>
+	<key>PINGAN</key>
+	<string>平安银行客服热线: 95511</string>
+	<key>PSBC</key>
+	<string>邮政储蓄银行客服热线: 95580</string>
+	<key>SDB</key>
+	<string>深发银行客服热线: 95501</string>
+	<key>SPDB</key>
+	<string>浦发银行客服热线: 95528</string>
+	<key>SRCB</key>
+	<string>上海农村商业银行客服热线: 021-962999</string>
+	<key>WZCB</key>
+	<string>温州银行客服热线: 96699</string>
+	<key>HFB</key>
+	<string>恒丰银行银行客服热线: 95395</string>
+</dict>
+</plist>

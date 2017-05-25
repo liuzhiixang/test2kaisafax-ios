@@ -1,0 +1,170 @@
+PODS:
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
+    - AFNetworking/NSURLSession
+  - AMPopTip (1.3.0)
+  - Aspects (1.4.1)
+  - BEMCheckBox (1.2.1)
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
+  - DACircularProgress (2.3.1)
+  - DZNEmptyDataSet (1.7.3)
+  - FDStackView (1.0)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - IQKeyboardManager (4.0.9)
+  - JSONKit-NoWarning (1.2)
+  - LGAlertView (2.2.0)
+  - LogglyLogger-CocoaLumberjack (2.3.2):
+    - CocoaLumberjack (~> 2.0)
+    - LogglyLogger-CocoaLumberjack/Formatter (= 2.3.2)
+    - LogglyLogger-CocoaLumberjack/Logger (= 2.3.2)
+  - LogglyLogger-CocoaLumberjack/Formatter (2.3.2):
+    - CocoaLumberjack (~> 2.0)
+  - LogglyLogger-CocoaLumberjack/Logger (2.3.2):
+    - CocoaLumberjack (~> 2.0)
+  - LTNavigationBar (2.1.9)
+  - M13Checkbox (1.2.0)
+  - M13OrderedDictionary (1.1.0)
+  - Masonry (1.0.2)
+  - MBProgressHUD (0.9.2)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - MZTimerLabel (0.5.4)
+  - NSHash (1.0.2)
+  - NUI (0.5.5):
+    - NUIParse
+  - NUIParse (1.3)
+  - ReactiveCocoa (4.2.2):
+    - Result (~> 2.0)
+  - Result (2.1.3)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - StaticDataTableViewController (2.0.5)
+  - Toast (3.1.0)
+  - UITableView+FDTemplateLayoutCell (1.4)
+  - UMengAnalytics (4.2.4)
+  - WechatOpenSDK (1.7.7)
+  - WeiboSDK (3.2.0)
+  - WMPageController (1.9.6)
+  - XWebView (0.10.0)
+  - YYModel (1.0.4)
+  - YYText (1.0.7)
+  - ZXingObjC (3.2.1):
+    - ZXingObjC/All (= 3.2.1)
+  - ZXingObjC/All (3.2.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0.4)
+  - AMPopTip (~> 1.3.0)
+  - Aspects (~> 1.4.1)
+  - BEMCheckBox (~> 1.2.1)
+  - CocoaLumberjack (~> 2.2.0)
+  - DACircularProgress (~> 2.3.1)
+  - DZNEmptyDataSet (~> 1.7.3)
+  - FDStackView (~> 1.0)
+  - FMDB (~> 2.6.2)
+  - IQKeyboardManager (~> 4.0.5)
+  - JSONKit-NoWarning (~> 1.2)
+  - LGAlertView (~> 2.2.0)
+  - LogglyLogger-CocoaLumberjack (~> 2.3.2)
+  - LTNavigationBar (~> 2.1.2)
+  - M13Checkbox (~> 1.2.0)
+  - M13OrderedDictionary (~> 1.1.0)
+  - Masonry (~> 1.0.1)
+  - MBProgressHUD (~> 0.9.2)
+  - MJExtension (~> 3.0.13)
+  - MJRefresh (~> 3.1.12)
+  - MZTimerLabel (~> 0.5.4)
+  - NSHash (~> 1.0.2)
+  - NUI (~> 0.5.5)
+  - ReactiveCocoa (~> 4.2.2)
+  - SDCycleScrollView (~> 1.65)
+  - SDWebImage (~> 3.7.4)
+  - StaticDataTableViewController (~> 2.0.5)
+  - Toast (~> 3.0)
+  - UITableView+FDTemplateLayoutCell (~> 1.4)
+  - UMengAnalytics (~> 4.2.4)
+  - WechatOpenSDK (~> 1.7.7)
+  - WeiboSDK (from `https://github.com/sinaweibosdk/weibo_ios_sdk.git`)
+  - WMPageController (= 1.9.6)
+  - XWebView (~> 0.10.0)
+  - YYModel (~> 1.0.4)
+  - YYText (~> 1.0.7)
+  - ZXingObjC (~> 3.0)
+
+EXTERNAL SOURCES:
+  WeiboSDK:
+    :git: https://github.com/sinaweibosdk/weibo_ios_sdk.git
+
+CHECKOUT OPTIONS:
+  WeiboSDK:
+    :commit: cc559ec82e8e89f955e7ecbd60a7565f8b992d86
+    :git: https://github.com/sinaweibosdk/weibo_ios_sdk.git
+
+SPEC CHECKSUMS:
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  AMPopTip: b810a33c120feacafce170cc9ddcaa8ce3a8389d
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  BEMCheckBox: 264b8b72aa92adbfefa265cc58a0cdb86b207b9f
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
+  FDStackView: 3a4bbe0ce9c35e974246a585168b9da8c32213f1
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
+  JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
+  LGAlertView: 0d26d3f26e5989767195fde98f85d067c028c207
+  LogglyLogger-CocoaLumberjack: a88d07ab44c4c3ee87b90e573793316e204cefea
+  LTNavigationBar: c278785bed344862e18146b5f06792932e4feacc
+  M13Checkbox: 741b406a1d72415e3e3af9b9b6347ff345ed2f97
+  M13OrderedDictionary: 6e157fe9c82aa6b3cd7198f5c5c30c7a6834c4a6
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MZTimerLabel: cd9bfb9304540ef2a9e163384fca9c978f0dbf83
+  NSHash: 173d9782d4b7dec17bf32f22d8ab203c88655a04
+  NUI: 53de7278003235deb2a375fe6f04c7a3aa3e49eb
+  NUIParse: 2e3885ba7807477266396292626bd387d34c2338
+  ReactiveCocoa: 72263e7ac0770c274617ccd345e01049d0ca38ae
+  Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  StaticDataTableViewController: 7ea8d7bc8c7f0a4e9255a320224462c7346c1d4a
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+  UMengAnalytics: ef8d45f94c0e5771dc364cf6a5731d9d3b101da2
+  WechatOpenSDK: cbd332148eb792d444ed4eec94f421d98f2046ee
+  WeiboSDK: a678016504873d4c12c35d156eabd232d19b3d3f
+  WMPageController: 23efe3512c7c5acf8678bcbda7206b3168900dd9
+  XWebView: eb8144e6dbaa839b2900ee1dbce2babb17f2282c
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  ZXingObjC: bbf7b8f0cf8933fdd33eb4f9f46e22308552869b
+
+PODFILE CHECKSUM: a93851e9b9f7e4f7707f94acef64f39d69f84957
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSJDCardDetailVC">
+            <connections>
+                <outlet property="JDCardOrangeBG" destination="F5J-Fi-qFe" id="AIX-NC-M3F"/>
+                <outlet property="JDCardWhiteBG" destination="S6f-r9-cVy" id="09w-wd-mOT"/>
+                <outlet property="JDECardLab" destination="DfW-R0-Io6" id="zPH-zh-IFS"/>
+                <outlet property="cardFeildView" destination="1aB-ZB-6dk" id="Mqf-5f-l6K"/>
+                <outlet property="cardNumLab" destination="Yeq-2H-FrC" id="sUf-9p-sGv"/>
+                <outlet property="cardStatusLab" destination="9PD-R1-FX0" id="DrJ-0Z-7Vn"/>
+                <outlet property="codeTextField" destination="M1E-vb-oj5" id="oAR-UA-xdP"/>
+                <outlet property="cutdownLabel" destination="9wK-Qo-H0r" id="Jhw-xn-8aQ"/>
+                <outlet property="cutdownView" destination="kOk-a8-9dV" id="lF5-Pj-aBL"/>
+                <outlet property="getTimeLab" destination="zjp-cq-CVv" id="3aA-zI-CqZ"/>
+                <outlet property="hintLab" destination="meT-De-W4h" id="e3H-8b-Q4E"/>
+                <outlet property="moneyCardLabel" destination="L0E-1q-I4z" id="56R-3E-dbj"/>
+                <outlet property="passWordImageView" destination="yzk-SN-ulo" id="1ge-vG-8Z6"/>
+                <outlet property="passWordLable" destination="5Rt-Rj-eo0" id="BDi-bk-VnL"/>
+                <outlet property="phoneTextField" destination="TmA-Xh-BSQ" id="FjD-Sg-c8h"/>
+                <outlet property="smsButton" destination="kyT-St-2Bi" id="jrt-50-FQN"/>
+                <outlet property="verifyView" destination="opa-Gp-ZBP" id="yqs-cg-JPq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_jingdong_card_detail_orange" translatesAutoresizingMaskIntoConstraints="NO" id="F5J-Fi-qFe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bg_jingdong_card_detail_white" translatesAutoresizingMaskIntoConstraints="NO" id="S6f-r9-cVy">
+                    <rect key="frame" x="20" y="60" width="335" height="532"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oK-qP-YBG">
+                    <rect key="frame" x="0.0" y="18" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="079-pa-2go"/>
+                        <constraint firstAttribute="height" constant="38" id="tgP-Aa-SCE"/>
+                    </constraints>
+                    <state key="normal" image="white_left"/>
+                    <connections>
+                        <action selector="clickBackButton:" destination="-1" eventType="touchUpInside" id="wcT-Ap-iYK"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="京东E卡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfW-R0-Io6">
+                    <rect key="frame" x="128" y="121" width="119" height="20.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppNormalDarkGrayLabel"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5000元" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0E-1q-I4z">
+                    <rect key="frame" x="110" y="149.5" width="155" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppJDLightRedLabel"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="领取时间:2017-02-16 15:26:28" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjp-cq-CVv">
+                    <rect key="frame" x="80" y="187.5" width="235" height="14.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallLightGrayLabel"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="制卡完成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PD-R1-FX0">
+                    <rect key="frame" x="110" y="238" width="155" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppJingDongLargeOrangeLabel"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1aB-ZB-6dk">
+                    <rect key="frame" x="65" y="297" width="245" height="57"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Rt-Rj-eo0">
+                            <rect key="frame" x="2" y="27" width="47" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppNormalDarkGrayLabel"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yzk-SN-ulo">
+                            <rect key="frame" x="40" y="22" width="205" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppNormalDarkGrayLabel"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="卡号 :  ADS12345678YUYUY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yeq-2H-FrC">
+                            <rect key="frame" x="0.0" y="-6" width="230" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppNormalDarkGrayLabel"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6oK-qP-YBG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JCt-k3-uJU"/>
+                <constraint firstItem="S6f-r9-cVy" firstAttribute="top" secondItem="6oK-qP-YBG" secondAttribute="bottom" constant="4" id="e95-de-nLb"/>
+                <constraint firstItem="6oK-qP-YBG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="18" id="oQd-3z-N5d"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="39.5" y="107.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="opa-Gp-ZBP">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qO8-AP-sRY">
+                    <rect key="frame" x="16" y="-4" width="272" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证手机" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TmA-Xh-BSQ">
+                            <rect key="frame" x="15" y="0.0" width="141" height="44"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyT-St-2Bi">
+                            <rect key="frame" x="164" y="0.0" width="92" height="44"/>
+                            <state key="normal" title="发送验证码">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOk-a8-9dV" userLabel="Cutdown View">
+                            <rect key="frame" x="164" y="0.0" width="108" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wK-Qo-H0r">
+                                    <rect key="frame" x="62.5" y="12" width="29.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.96470588239999999" green="0.2901960784" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="倒计时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XB-EJ-K9r">
+                                    <rect key="frame" x="10.5" y="12" width="52" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="9wK-Qo-H0r" secondAttribute="trailing" constant="16" id="MES-MY-jj6"/>
+                                <constraint firstItem="3XB-EJ-K9r" firstAttribute="centerY" secondItem="kOk-a8-9dV" secondAttribute="centerY" id="P4G-BC-KIC"/>
+                                <constraint firstItem="9wK-Qo-H0r" firstAttribute="leading" secondItem="3XB-EJ-K9r" secondAttribute="trailing" id="R0i-MU-sTS"/>
+                                <constraint firstItem="9wK-Qo-H0r" firstAttribute="centerY" secondItem="kOk-a8-9dV" secondAttribute="centerY" id="xx7-PO-rjA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="kOk-a8-9dV" firstAttribute="leading" secondItem="TmA-Xh-BSQ" secondAttribute="trailing" constant="8" id="0wT-HP-hxK"/>
+                        <constraint firstAttribute="bottom" secondItem="kyT-St-2Bi" secondAttribute="bottom" id="74K-Wm-Dst"/>
+                        <constraint firstAttribute="height" constant="44" id="BjL-Vo-hNb"/>
+                        <constraint firstAttribute="trailing" secondItem="kyT-St-2Bi" secondAttribute="trailing" constant="16" id="IRE-DQ-UgL"/>
+                        <constraint firstItem="kOk-a8-9dV" firstAttribute="top" secondItem="qO8-AP-sRY" secondAttribute="top" id="Iqi-9J-bcZ"/>
+                        <constraint firstAttribute="bottom" secondItem="kOk-a8-9dV" secondAttribute="bottom" id="Vup-oC-0BB"/>
+                        <constraint firstAttribute="trailing" secondItem="kOk-a8-9dV" secondAttribute="trailing" id="bse-X8-8RX"/>
+                        <constraint firstItem="kyT-St-2Bi" firstAttribute="leading" secondItem="TmA-Xh-BSQ" secondAttribute="trailing" constant="8" id="ih2-11-G1L"/>
+                        <constraint firstItem="TmA-Xh-BSQ" firstAttribute="leading" secondItem="qO8-AP-sRY" secondAttribute="leading" constant="15" id="nk9-I4-qwW"/>
+                        <constraint firstAttribute="bottom" secondItem="TmA-Xh-BSQ" secondAttribute="bottom" id="rf8-51-s48"/>
+                        <constraint firstItem="kyT-St-2Bi" firstAttribute="top" secondItem="qO8-AP-sRY" secondAttribute="top" id="vUw-1Z-FP9"/>
+                        <constraint firstItem="TmA-Xh-BSQ" firstAttribute="top" secondItem="qO8-AP-sRY" secondAttribute="top" id="w19-fo-2n9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppRoundBroderView"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Caq-Jk-c8f">
+                    <rect key="frame" x="16" y="50" width="272" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M1E-vb-oj5">
+                            <rect key="frame" x="15" y="0.0" width="241" height="44"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="M1E-vb-oj5" secondAttribute="bottom" id="JaF-2J-Ka2"/>
+                        <constraint firstItem="M1E-vb-oj5" firstAttribute="top" secondItem="Caq-Jk-c8f" secondAttribute="top" id="kwx-tA-EOb"/>
+                        <constraint firstItem="M1E-vb-oj5" firstAttribute="leading" secondItem="Caq-Jk-c8f" secondAttribute="leading" constant="15" id="lT9-dv-eq6"/>
+                        <constraint firstAttribute="height" constant="44" id="o1Z-dr-bKJ"/>
+                        <constraint firstAttribute="trailing" secondItem="M1E-vb-oj5" secondAttribute="trailing" constant="16" id="vvY-q0-sep"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppRoundBroderView"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入验证码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meT-De-W4h">
+                    <rect key="frame" x="30" y="102" width="252" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallLightRedLabel"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qO8-AP-sRY" firstAttribute="leading" secondItem="opa-Gp-ZBP" secondAttribute="leading" constant="16" id="24G-vv-6H0"/>
+                <constraint firstAttribute="bottom" secondItem="meT-De-W4h" secondAttribute="bottom" id="2Wt-8S-zqY">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppLightRedLabel"/>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="Caq-Jk-c8f" firstAttribute="top" secondItem="qO8-AP-sRY" secondAttribute="bottom" constant="10" id="AaJ-sG-KVI"/>
+                <constraint firstAttribute="trailing" secondItem="qO8-AP-sRY" secondAttribute="trailing" constant="16" id="C5o-DL-bHY"/>
+                <constraint firstItem="meT-De-W4h" firstAttribute="top" secondItem="Caq-Jk-c8f" secondAttribute="bottom" constant="8" id="L2N-VF-RuF"/>
+                <constraint firstItem="meT-De-W4h" firstAttribute="leading" secondItem="opa-Gp-ZBP" secondAttribute="leading" constant="30" id="WAl-xg-HiW"/>
+                <constraint firstAttribute="trailing" secondItem="meT-De-W4h" secondAttribute="trailing" constant="22" id="eNR-9j-XMt"/>
+                <constraint firstAttribute="trailing" secondItem="Caq-Jk-c8f" secondAttribute="trailing" constant="16" id="l28-7O-jhr"/>
+                <constraint firstItem="Caq-Jk-c8f" firstAttribute="leading" secondItem="opa-Gp-ZBP" secondAttribute="leading" constant="16" id="lqT-Yv-LSq"/>
+                <constraint firstItem="qO8-AP-sRY" firstAttribute="top" secondItem="opa-Gp-ZBP" secondAttribute="top" constant="-4" id="vqc-gl-HX8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="447" y="-39"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_jingdong_card_detail_orange" width="375" height="667"/>
+        <image name="bg_jingdong_card_detail_white" width="335" height="532"/>
+        <image name="white_left" width="11" height="19"/>
+    </resources>
+</document>

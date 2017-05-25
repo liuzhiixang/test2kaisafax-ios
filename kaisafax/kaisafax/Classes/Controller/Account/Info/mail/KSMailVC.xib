@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSMailVC">
+            <connections>
+                <outlet property="errorView" destination="aTQ-xW-tM2" id="8fv-rj-7OZ"/>
+                <outlet property="mailTF" destination="KvW-bC-xf6" id="TBd-B5-9vX"/>
+                <outlet property="saveBtn" destination="YSm-b9-X65" id="O1Z-ZI-fIr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑定邮箱获取最新的投资讯息和账户信息变动通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWb-uk-cAm">
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCq-IV-Xsa">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邮箱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jj2-J9-Fnm">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="31" id="aYj-hf-0Bh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppNormalDarkGrayLabel"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请填写邮箱账号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KvW-bC-xf6">
+                            <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Jj2-J9-Fnm" firstAttribute="leading" secondItem="JCq-IV-Xsa" secondAttribute="leading" constant="15" id="1KB-44-DKn"/>
+                        <constraint firstAttribute="height" constant="49" id="BAY-ua-hlH"/>
+                        <constraint firstItem="KvW-bC-xf6" firstAttribute="centerY" secondItem="JCq-IV-Xsa" secondAttribute="centerY" id="OXQ-eA-YSs"/>
+                        <constraint firstItem="Jj2-J9-Fnm" firstAttribute="centerY" secondItem="JCq-IV-Xsa" secondAttribute="centerY" id="UIe-XU-zFH"/>
+                        <constraint firstAttribute="trailing" secondItem="KvW-bC-xf6" secondAttribute="trailing" id="pr1-6X-3Hc"/>
+                        <constraint firstItem="KvW-bC-xf6" firstAttribute="leading" secondItem="Jj2-J9-Fnm" secondAttribute="trailing" constant="15" id="t0t-Iy-8Ch"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSm-b9-X65">
+                    <color key="backgroundColor" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="2Yl-wK-xpt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppOrangeButton"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="saveAction:" destination="-1" eventType="touchUpInside" id="Ymh-KB-HzY"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTQ-xW-tM2">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邮箱输入有误" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLG-AC-kbX">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="12" id="kWv-Yt-Z9T"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.90196078431372551" green="0.0" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="YLG-AC-kbX" firstAttribute="leading" secondItem="aTQ-xW-tM2" secondAttribute="leading" constant="15" id="LJz-8k-Shq"/>
+                        <constraint firstItem="YLG-AC-kbX" firstAttribute="top" secondItem="aTQ-xW-tM2" secondAttribute="top" constant="5" id="PVZ-wO-XoP"/>
+                        <constraint firstAttribute="height" constant="16" id="ad5-xH-e0B"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JCq-IV-Xsa" secondAttribute="trailing" id="8cp-Jq-Vo4"/>
+                <constraint firstItem="JCq-IV-Xsa" firstAttribute="top" secondItem="vWb-uk-cAm" secondAttribute="bottom" constant="15" id="LRq-UZ-tW5"/>
+                <constraint firstItem="vWb-uk-cAm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Yog-6u-zBQ"/>
+                <constraint firstItem="YSm-b9-X65" firstAttribute="top" secondItem="JCq-IV-Xsa" secondAttribute="bottom" constant="45" id="ZW6-eO-2Fw"/>
+                <constraint firstItem="aTQ-xW-tM2" firstAttribute="top" secondItem="JCq-IV-Xsa" secondAttribute="bottom" constant="10" id="aDf-oe-B4G"/>
+                <constraint firstItem="vWb-uk-cAm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="agu-DJ-qBu"/>
+                <constraint firstAttribute="trailing" secondItem="vWb-uk-cAm" secondAttribute="trailing" id="bvt-cy-Jna"/>
+                <constraint firstAttribute="trailing" secondItem="aTQ-xW-tM2" secondAttribute="trailing" id="k5s-LP-Pke"/>
+                <constraint firstAttribute="trailing" secondItem="YSm-b9-X65" secondAttribute="trailing" constant="15" id="khh-NE-Hbv"/>
+                <constraint firstItem="JCq-IV-Xsa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mzg-1n-Xnt"/>
+                <constraint firstItem="YSm-b9-X65" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="wJV-DC-C8H"/>
+                <constraint firstItem="aTQ-xW-tM2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zD3-dh-03s"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

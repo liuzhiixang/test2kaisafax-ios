@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSGestureVerifyVC">
+            <connections>
+                <outlet property="gestureLockView" destination="sLe-S9-jcg" id="mii-b5-ap0"/>
+                <outlet property="loginOtherBtn" destination="7m6-9B-Etk" id="rIC-kE-aJJ"/>
+                <outlet property="msgLabel" destination="Gwj-IO-zGj" id="kUe-Ui-8px"/>
+                <outlet property="userIconView" destination="wBS-fX-hZF" id="Grd-XR-Dzt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_defaultphoto_big" translatesAutoresizingMaskIntoConstraints="NO" id="wBS-fX-hZF">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wBS-fX-hZF" secondAttribute="height" multiplier="1:1" id="5EP-Vo-p1X"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwj-IO-zGj" customClass="SQLockLabel">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="7JM-Ns-D1v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txj-mu-Nrb" userLabel="Center Container">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLe-S9-jcg" userLabel="Gesture View" customClass="SQGestureView">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="sLe-S9-jcg" secondAttribute="height" multiplier="1:1" id="Rrf-ET-JQs"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sLe-S9-jcg" firstAttribute="width" secondItem="txj-mu-Nrb" secondAttribute="width" multiplier="13:15" id="O5d-cy-a9R"/>
+                        <constraint firstItem="sLe-S9-jcg" firstAttribute="centerY" secondItem="txj-mu-Nrb" secondAttribute="centerY" id="OYQ-wC-omw"/>
+                        <constraint firstItem="sLe-S9-jcg" firstAttribute="centerX" secondItem="txj-mu-Nrb" secondAttribute="centerX" id="Xhx-lU-rnc"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7m6-9B-Etk">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Egn-HA-Z7A"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7m6-9B-Etk" firstAttribute="top" secondItem="txj-mu-Nrb" secondAttribute="bottom" constant="2" id="4jC-Jn-6Fi"/>
+                <constraint firstItem="txj-mu-Nrb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7FP-su-bri"/>
+                <constraint firstItem="txj-mu-Nrb" firstAttribute="top" secondItem="Gwj-IO-zGj" secondAttribute="bottom" constant="5" id="HNC-ep-2i1"/>
+                <constraint firstAttribute="trailing" secondItem="txj-mu-Nrb" secondAttribute="trailing" id="HVa-DX-bax"/>
+                <constraint firstAttribute="trailing" secondItem="7m6-9B-Etk" secondAttribute="trailing" constant="20" id="Hqm-wL-JN7"/>
+                <constraint firstItem="wBS-fX-hZF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="TBe-ij-Pud"/>
+                <constraint firstItem="wBS-fX-hZF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Xbe-B3-paq"/>
+                <constraint firstItem="7m6-9B-Etk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="bbG-kN-8lI"/>
+                <constraint firstItem="Gwj-IO-zGj" firstAttribute="top" secondItem="wBS-fX-hZF" secondAttribute="bottom" constant="20" id="dDZ-33-zgX"/>
+                <constraint firstAttribute="bottom" secondItem="7m6-9B-Etk" secondAttribute="bottom" constant="20" id="g3T-3U-20M"/>
+                <constraint firstAttribute="trailing" secondItem="Gwj-IO-zGj" secondAttribute="trailing" id="qx6-re-XWh"/>
+                <constraint firstItem="wBS-fX-hZF" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:5" id="z0g-1A-Gd3"/>
+                <constraint firstItem="Gwj-IO-zGj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zou-5G-iWH"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_defaultphoto_big" width="64" height="64"/>
+    </resources>
+</document>

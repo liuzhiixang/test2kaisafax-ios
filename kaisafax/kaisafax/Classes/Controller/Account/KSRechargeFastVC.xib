@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSRechargeFastVC">
+            <connections>
+                <outlet property="availableLabel" destination="u4L-cM-7Fi" id="M9b-u7-Ild"/>
+                <outlet property="inputTextField" destination="pCR-yg-jDY" id="OcL-2o-LT2"/>
+                <outlet property="rechargeButton" destination="fr2-MQ-qDk" id="4XU-Qe-5w2"/>
+                <outlet property="tableView" destination="jNX-j4-Upr" id="tfO-0C-qwH"/>
+                <outlet property="view" destination="WST-JI-AMJ" id="4pl-Y6-L6n"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="WST-JI-AMJ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="jNX-j4-Upr">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="497"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="W5l-7N-98f" userLabel="Header View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="当前可用余额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c20-eB-Xov">
+                                <rect key="frame" x="16" y="30" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallDarkGrayLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUN-qq-aFP">
+                                <rect key="frame" x="0.0" y="59" width="320" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="充值金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcu-b7-sL9">
+                                        <rect key="frame" x="16" y="12" width="73" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppNormalDarkGrayLabel"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入充值金额" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pCR-yg-jDY" customClass="KSTextField">
+                                        <rect key="frame" x="97" y="2" width="207" height="41"/>
+                                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pCR-yg-jDY" firstAttribute="top" secondItem="gUN-qq-aFP" secondAttribute="top" constant="2" id="2mX-ea-CTk"/>
+                                    <constraint firstItem="fcu-b7-sL9" firstAttribute="top" secondItem="gUN-qq-aFP" secondAttribute="top" constant="16" id="6EX-lr-sIQ"/>
+                                    <constraint firstItem="fcu-b7-sL9" firstAttribute="leading" secondItem="gUN-qq-aFP" secondAttribute="leading" constant="16" id="ATB-uZ-sNQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="fcu-b7-sL9" secondAttribute="bottom" constant="16" id="YFP-0I-ZBw"/>
+                                    <constraint firstAttribute="trailing" secondItem="pCR-yg-jDY" secondAttribute="trailing" constant="16" id="su3-Cx-c0A"/>
+                                    <constraint firstAttribute="bottom" secondItem="pCR-yg-jDY" secondAttribute="bottom" constant="2" id="wQQ-pu-vY5"/>
+                                    <constraint firstItem="pCR-yg-jDY" firstAttribute="leading" secondItem="fcu-b7-sL9" secondAttribute="trailing" constant="16" id="yWZ-TV-6bT"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4L-cM-7Fi">
+                                <rect key="frame" x="131" y="30" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallDarkGrayLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c20-eB-Xov" firstAttribute="leading" secondItem="W5l-7N-98f" secondAttribute="leading" constant="16" id="0ne-F7-jgb"/>
+                            <constraint firstItem="gUN-qq-aFP" firstAttribute="leading" secondItem="W5l-7N-98f" secondAttribute="leading" id="459-pt-vrO"/>
+                            <constraint firstItem="u4L-cM-7Fi" firstAttribute="leading" secondItem="c20-eB-Xov" secondAttribute="trailing" constant="16" id="629-IL-soX"/>
+                            <constraint firstItem="u4L-cM-7Fi" firstAttribute="centerY" secondItem="c20-eB-Xov" secondAttribute="centerY" id="L6m-cY-WVg"/>
+                            <constraint firstAttribute="bottom" secondItem="gUN-qq-aFP" secondAttribute="bottom" constant="16" id="OfY-s8-7Hs"/>
+                            <constraint firstItem="gUN-qq-aFP" firstAttribute="top" secondItem="c20-eB-Xov" secondAttribute="bottom" constant="16" id="fhC-xf-ZE6"/>
+                            <constraint firstAttribute="trailing" secondItem="u4L-cM-7Fi" secondAttribute="trailing" constant="20" id="i02-WP-NTV"/>
+                            <constraint firstItem="c20-eB-Xov" firstAttribute="top" secondItem="W5l-7N-98f" secondAttribute="top" constant="16" id="jjU-Qv-uAy"/>
+                            <constraint firstAttribute="trailing" secondItem="gUN-qq-aFP" secondAttribute="trailing" id="vqd-Bl-mo2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GVH-az-KVz"/>
+                        <outlet property="delegate" destination="-1" id="dsw-Po-vq2"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="teU-HX-Ihe" userLabel="Bottom View">
+                    <rect key="frame" x="0.0" y="497" width="320" height="71"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr2-MQ-qDk" customClass="KSButton">
+                            <rect key="frame" x="8" y="10" width="304" height="30"/>
+                            <color key="backgroundColor" red="0.5296475887298584" green="0.52963173389434814" blue="0.52964073419570923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="确认充值"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppOrangeButton"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="rechargeAction:" destination="-1" eventType="touchUpInside" id="PVJ-uT-z7v"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="充值手续费由佳兆业金服全额垫付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WC7-cu-Xs5" customClass="KSLabel">
+                            <rect key="frame" x="70" y="48" width="180" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallLightGrayLabel"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="fr2-MQ-qDk" secondAttribute="trailing" constant="8" id="1zs-FC-VCT"/>
+                        <constraint firstItem="fr2-MQ-qDk" firstAttribute="leading" secondItem="teU-HX-Ihe" secondAttribute="leading" constant="8" id="Ng1-Ri-RFY"/>
+                        <constraint firstItem="WC7-cu-Xs5" firstAttribute="top" secondItem="fr2-MQ-qDk" secondAttribute="bottom" constant="8" id="Qiz-pe-vug"/>
+                        <constraint firstItem="WC7-cu-Xs5" firstAttribute="centerX" secondItem="teU-HX-Ihe" secondAttribute="centerX" id="Xzd-c6-RnG"/>
+                        <constraint firstItem="fr2-MQ-qDk" firstAttribute="top" secondItem="teU-HX-Ihe" secondAttribute="top" constant="10" id="dpn-Ll-m9B"/>
+                        <constraint firstAttribute="bottom" secondItem="WC7-cu-Xs5" secondAttribute="bottom" constant="8" id="pW5-o0-yRY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="teU-HX-Ihe" secondAttribute="trailing" id="6T9-Bu-OX8"/>
+                <constraint firstItem="jNX-j4-Upr" firstAttribute="top" secondItem="WST-JI-AMJ" secondAttribute="top" id="7hr-i2-ADg"/>
+                <constraint firstAttribute="bottom" secondItem="teU-HX-Ihe" secondAttribute="bottom" id="HZQ-Uk-d60"/>
+                <constraint firstAttribute="trailing" secondItem="jNX-j4-Upr" secondAttribute="trailing" id="LUM-6s-TZb"/>
+                <constraint firstItem="jNX-j4-Upr" firstAttribute="leading" secondItem="WST-JI-AMJ" secondAttribute="leading" id="Qf1-ge-bbW"/>
+                <constraint firstItem="teU-HX-Ihe" firstAttribute="top" secondItem="jNX-j4-Upr" secondAttribute="bottom" id="UAw-1V-1fp"/>
+                <constraint firstItem="teU-HX-Ihe" firstAttribute="leading" secondItem="WST-JI-AMJ" secondAttribute="leading" id="f1x-CN-W0e"/>
+            </constraints>
+            <point key="canvasLocation" x="153" y="29"/>
+        </view>
+    </objects>
+</document>

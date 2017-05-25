@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KSInvestHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SwH-0g-j3U" userLabel="Content View">
+                    <frame key="frameInset" minX="8" minY="2" width="304" height="37"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="我是大标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlc-Nz-zrG" customClass="KSLabel">
+                            <frame key="frameInset" minX="8" minY="8" width="85" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppNormalDarkGrayLabel"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWI-tE-gGP" userLabel="Line">
+                            <frame key="frameInset" minY="36" width="304" height="1"/>
+                            <color key="backgroundColor" red="0.94097667932510376" green="0.940948486328125" blue="0.9409644603729248" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="MFw-8x-Dyq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="副标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEo-Hr-SGo" customClass="KSLabel">
+                            <frame key="frameInset" minX="101" minY="8" width="51" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="AppSmallLightGrayLabel"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pZO-ZT-FoY">
+                            <frame key="frameInset" minX="263" width="34" height="37"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQY-sh-u4Q" customClass="KSLabel">
+                                    <color key="backgroundColor" red="0.96470588239999999" green="0.2901960784" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nuiClass" value="InvestListTagLabel"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="nlc-Nz-zrG" secondAttribute="bottom" constant="8" id="0Hw-aa-a8M"/>
+                        <constraint firstAttribute="bottom" secondItem="pZO-ZT-FoY" secondAttribute="bottom" id="42s-TC-hLb"/>
+                        <constraint firstAttribute="bottom" secondItem="JWI-tE-gGP" secondAttribute="bottom" id="F8a-SY-cCp"/>
+                        <constraint firstItem="nlc-Nz-zrG" firstAttribute="leading" secondItem="SwH-0g-j3U" secondAttribute="leading" constant="8" id="G90-pa-9G4"/>
+                        <constraint firstAttribute="trailing" secondItem="pZO-ZT-FoY" secondAttribute="trailing" constant="8" id="W6n-23-70E"/>
+                        <constraint firstAttribute="trailing" secondItem="JWI-tE-gGP" secondAttribute="trailing" id="dWe-1Q-0WG"/>
+                        <constraint firstItem="JWI-tE-gGP" firstAttribute="leading" secondItem="SwH-0g-j3U" secondAttribute="leading" id="h7d-W8-fMA"/>
+                        <constraint firstItem="aEo-Hr-SGo" firstAttribute="leading" secondItem="nlc-Nz-zrG" secondAttribute="trailing" constant="8" id="moL-8q-SFv"/>
+                        <constraint firstItem="pZO-ZT-FoY" firstAttribute="top" secondItem="SwH-0g-j3U" secondAttribute="top" id="nmg-D4-YCH"/>
+                        <constraint firstItem="pZO-ZT-FoY" firstAttribute="centerY" secondItem="SwH-0g-j3U" secondAttribute="centerY" id="qRE-IM-lVM"/>
+                        <constraint firstItem="nlc-Nz-zrG" firstAttribute="top" secondItem="SwH-0g-j3U" secondAttribute="top" constant="8" id="s0Y-aR-s07"/>
+                        <constraint firstItem="aEo-Hr-SGo" firstAttribute="centerY" secondItem="SwH-0g-j3U" secondAttribute="centerY" id="t9u-Dn-4LI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SwH-0g-j3U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="4X0-sz-KdT"/>
+                <constraint firstAttribute="trailing" secondItem="SwH-0g-j3U" secondAttribute="trailing" constant="8" id="PmK-bK-9lb"/>
+                <constraint firstAttribute="bottom" secondItem="SwH-0g-j3U" secondAttribute="bottom" id="pQk-HV-uzJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ctView" destination="SwH-0g-j3U" id="p04-wI-gK5"/>
+                <outlet property="stackView" destination="pZO-ZT-FoY" id="9SG-pB-r2T"/>
+                <outlet property="subtitleLabel" destination="aEo-Hr-SGo" id="RBp-Zu-kV5"/>
+                <outlet property="titleLabel" destination="nlc-Nz-zrG" id="Ikc-hI-Z1Q"/>
+            </connections>
+            <point key="canvasLocation" x="350" y="193.5"/>
+        </view>
+    </objects>
+</document>

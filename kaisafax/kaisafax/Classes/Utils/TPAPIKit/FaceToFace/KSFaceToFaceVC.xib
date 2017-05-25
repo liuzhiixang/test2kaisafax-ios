@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSFaceToFaceVC">
+            <connections>
+                <outlet property="qrSuperWWRatioConstraint" destination="s4y-k3-q4Z" id="J89-l8-F7P"/>
+                <outlet property="qrcodeImageView" destination="4T4-4p-nYK" id="6wb-dJ-tYz"/>
+                <outlet property="qrcodeTopConstraint" destination="2Rd-YP-zAu" id="cX7-9i-8PP"/>
+                <outlet property="qrcodeWHRatioConstraint" destination="BdH-pe-hsG" id="q67-Cq-Qlb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_page_bg_img" translatesAutoresizingMaskIntoConstraints="NO" id="1kM-xC-qhf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1kM-xC-qhf" secondAttribute="height" multiplier="375:563" id="7dP-yd-Nqs"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_page_bottom_img" translatesAutoresizingMaskIntoConstraints="NO" id="QzM-xC-gSQ">
+                    <rect key="frame" x="0.0" y="444" width="320" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="QzM-xC-gSQ" secondAttribute="height" multiplier="80:9" id="EkB-H0-peo"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4T4-4p-nYK">
+                    <rect key="frame" x="107" y="71" width="105" height="105"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4T4-4p-nYK" secondAttribute="height" multiplier="1:1" id="BdH-pe-hsG"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4T4-4p-nYK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="2Rd-YP-zAu"/>
+                <constraint firstItem="1kM-xC-qhf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3uh-kY-LKA"/>
+                <constraint firstAttribute="bottom" secondItem="QzM-xC-gSQ" secondAttribute="bottom" id="cqW-6L-f6c"/>
+                <constraint firstAttribute="trailing" secondItem="1kM-xC-qhf" secondAttribute="trailing" id="ehs-2g-3Nm"/>
+                <constraint firstItem="1kM-xC-qhf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pKR-hy-fTN"/>
+                <constraint firstItem="4T4-4p-nYK" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="21:64" id="s4y-k3-q4Z"/>
+                <constraint firstItem="QzM-xC-gSQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sD3-yl-Ao3"/>
+                <constraint firstItem="4T4-4p-nYK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tV5-9p-Fzp"/>
+                <constraint firstAttribute="trailing" secondItem="QzM-xC-gSQ" secondAttribute="trailing" id="uAH-aU-MM8"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qrcode_page_bg_img" width="375" height="563"/>
+        <image name="qrcode_page_bottom_img" width="375" height="40"/>
+    </resources>
+</document>
